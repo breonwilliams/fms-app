@@ -9,6 +9,7 @@ import { RecentScreensPage } from '../pages/recent-screens/recent-screens';
 import { TermsConditionsPage } from '../pages/terms-conditions/terms-conditions';
 import { LogoutPage } from '../pages/logout/logout';
 import { ClientDetailsPage } from '../pages/client-details/client-details';
+import { ScreenResultsPage } from '../pages/screen-results/screen-results';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TermsConditionsPage,
     LogoutPage,
     ClientDetailsPage,
+    ScreenResultsPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RecentScreensPage,
     TermsConditionsPage,
     LogoutPage,
-    ClientDetailsPage
+    ClientDetailsPage,
+    ScreenResultsPage
   ],
   providers: [
     StatusBar,
