@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { ViewController } from 'ionic-angular';
+
 /**
  * Generated class for the EditProfilePage page.
  *
@@ -14,7 +16,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class EditProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+    console.log('EditProfilePage constructor');
+  }
+
+  closeModal() {
+    this.viewCtrl.dismiss();
   }
 
   ionViewDidLoad() {

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { ClientDetailsPage } from '../client-details/client-details';
+import { EditProfilePage } from '../edit-profile/edit-profile';
 /**
  * Generated class for the ManageClientsPage page.
  *

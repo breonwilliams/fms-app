@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { EditProfilePage } from '../edit-profile/edit-profile';
+import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
+
 
 /**
  * Generated class for the ClientDetailsPage page.
@@ -15,8 +17,13 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ClientDetailsPage {
   item: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
     this.item = navParams.get('item')
+  }
+
+  openModal() {
+    let myModal = this.modalCtrl.create(EditProfilePage);
+    myModal.present();
   }
 
   ionViewDidLoad() {

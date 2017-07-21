@@ -8,12 +8,61 @@
 
   <ion-navbar color="fmsRed">
     <ion-title>{{ item }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+  <ion-card class="full-w">
+    <img src="../../assets/img/hero.jpg"/>
+    <div class="card-title">FMS</div>
+    <div class="card-subtitle">Join the movement</div>
+  </ion-card>
 
   <h2>Welcome {{ item }}</h2>
+  <ion-item-group>
+    <ion-item-divider color="dark">Client Details</ion-item-divider>
+    <ion-item>
+      <ion-row>
+        <ion-col col-6 >
+          Email:
+        </ion-col>
+        <ion-col col-6 text-right>
+          email@email.com
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item>
+      <ion-row>
+        <ion-col col-6 >
+          Date of Birth:
+        </ion-col>
+        <ion-col col-6 text-right>
+          07-17-1983
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item>
+      <ion-row>
+        <ion-col col-6 >
+          Gender:
+        </ion-col>
+        <ion-col col-6 text-right>
+          gender
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+
+
+  </ion-item-group>
 
 </ion-content>
