@@ -24,6 +24,12 @@ export class EditProfilePage {
     this.viewCtrl.dismiss();
   }
 
+  public event = {
+    month: '1990-02-19',
+    timeStarts: '07:43',
+    timeEnds: '1990-02-20'
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad EditProfilePage');
   }

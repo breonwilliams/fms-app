@@ -7,14 +7,30 @@
 <ion-header color="fmsRed">
 
   <ion-navbar color="fmsRed">
-    <ion-title>{{ item }}</ion-title>
+    <ion-title>Screen Results</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
 
-  <h2>Welcome {{ item }}</h2>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/img/user-placeholder.svg" />
+        </ion-avatar>
+        <h2>{{ item }}</h2>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="mail"></ion-icon>
+          Email Results
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
 
 </ion-content>

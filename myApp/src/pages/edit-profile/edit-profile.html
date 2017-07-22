@@ -6,14 +6,44 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="fmsRedSecondary">
     <ion-title>Edit Profile</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="closeModal()"><ion-icon ios="ios-close" md="md-close"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <h2>Welcome {{item}}</h2>
-  <button ion-button block (click)="closeModal()">Close Modal</button>
+<ion-content >
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>First Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Last Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email:</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email:</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+
+  </ion-list>
+  <button ion-button full block (click)="closeModal()" color="secondary" >Save</button>
 </ion-content>
