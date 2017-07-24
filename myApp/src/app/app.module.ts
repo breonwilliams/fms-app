@@ -11,6 +11,7 @@ import { LogoutPage } from '../pages/logout/logout';
 import { ClientDetailsPage } from '../pages/client-details/client-details';
 import { ScreenResultsPage } from '../pages/screen-results/screen-results';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { NewClientPage } from '../pages/new-client/new-client';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LogoutPage,
     ClientDetailsPage,
     ScreenResultsPage,
-    EditProfilePage
+    EditProfilePage,
+    NewClientPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LogoutPage,
     ClientDetailsPage,
     ScreenResultsPage,
-    EditProfilePage
+    EditProfilePage,
+    NewClientPage
   ],
   providers: [
     StatusBar,

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
 
 import { ClientDetailsPage } from '../client-details/client-details';
 import { EditProfilePage } from '../edit-profile/edit-profile';
+import { NewClientPage } from '../new-client/new-client';
 /**
  * Generated class for the ManageClientsPage page.
  *
@@ -18,7 +19,7 @@ export class ManageClientsPage {
 
   items;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
     this.initializeItems();
   }
 
@@ -66,6 +67,11 @@ export class ManageClientsPage {
     this.navCtrl.push(ClientDetailsPage, {
       item: item
     })
+  }
+
+  openModal() {
+    let myModal = this.modalCtrl.create(NewClientPage);
+    myModal.present();
   }
 
 

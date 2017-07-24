@@ -20,8 +20,17 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-
       {{ item }}
     </button>
   </ion-list>
+
+  <ion-fab bottom center edge>
+    <button ion-fab mini (click)="openModal()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+
+  </ion-toolbar>
+</ion-footer>
