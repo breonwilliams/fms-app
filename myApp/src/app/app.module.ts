@@ -12,6 +12,7 @@ import { ClientDetailsPage } from '../pages/client-details/client-details';
 import { ScreenResultsPage } from '../pages/screen-results/screen-results';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 import { NewClientPage } from '../pages/new-client/new-client';
+import { ScreeningFmsPage } from '../pages/screening-fms/screening-fms';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ClientDetailsPage,
     ScreenResultsPage,
     EditProfilePage,
-    NewClientPage
+    NewClientPage,
+    ScreeningFmsPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ClientDetailsPage,
     ScreenResultsPage,
     EditProfilePage,
-    NewClientPage
+    NewClientPage,
+    ScreeningFmsPage
   ],
   providers: [
     StatusBar,

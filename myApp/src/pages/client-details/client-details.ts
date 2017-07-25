@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from 'ionic-angular';
 import { EditProfilePage } from '../edit-profile/edit-profile';
+import { ScreeningFmsPage } from '../screening-fms/screening-fms';
 import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
 
 
@@ -16,9 +17,13 @@ import { NavController, NavParams, ModalController, ViewController, ToastControl
   templateUrl: 'client-details.html',
 })
 export class ClientDetailsPage {
+
+  pushFMSScreeningPage: any;
+
   item: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController, public alerCtrl: AlertController) {
+    this.pushFMSScreeningPage = ScreeningFmsPage;
     this.item = navParams.get('item')
   }
 
