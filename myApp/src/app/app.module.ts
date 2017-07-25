@@ -13,6 +13,7 @@ import { ScreenResultsPage } from '../pages/screen-results/screen-results';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 import { NewClientPage } from '../pages/new-client/new-client';
 import { ScreeningFmsPage } from '../pages/screening-fms/screening-fms';
+import { ScreeningModalPage } from '../pages/screening-modal/screening-modal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -29,7 +30,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreenResultsPage,
     EditProfilePage,
     NewClientPage,
-    ScreeningFmsPage
+    ScreeningFmsPage,
+    ScreeningModalPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreenResultsPage,
     EditProfilePage,
     NewClientPage,
-    ScreeningFmsPage
+    ScreeningFmsPage,
+    ScreeningModalPage
   ],
   providers: [
     StatusBar,
