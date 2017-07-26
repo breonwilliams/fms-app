@@ -23,7 +23,7 @@ export class ScreeningModalPage {
   ) {
     var characters = [
       {
-        name: 'Gollum',
+        name: 'Deep Squat',
         quote: 'Sneaky little hobbitses!',
         image: '../../assets/img/user-placeholder.svg',
         items: [
@@ -33,7 +33,7 @@ export class ScreeningModalPage {
         ]
       },
       {
-        name: 'Frodo',
+        name: 'Hurdle Step',
         quote: 'Go back, Sam! I\'m going to Mordor alone!',
         image: '../../assets/img/user-placeholder.svg',
         items: [
@@ -43,7 +43,47 @@ export class ScreeningModalPage {
         ]
       },
       {
-        name: 'Samwise Gamgee',
+        name: 'Inline Lunge',
+        quote: 'What we need is a few good taters.',
+        image: '../../assets/img/user-placeholder.svg',
+        items: [
+          { title: 'Race', note: 'Hobbit' },
+          { title: 'Culture', note: 'Shire Folk' },
+          { title: 'Nickname', note: 'Sam' }
+        ]
+      },
+      {
+        name: 'Shoulder Mobility',
+        quote: 'What we need is a few good taters.',
+        image: '../../assets/img/user-placeholder.svg',
+        items: [
+          { title: 'Race', note: 'Hobbit' },
+          { title: 'Culture', note: 'Shire Folk' },
+          { title: 'Nickname', note: 'Sam' }
+        ]
+      },
+      {
+        name: 'Active Straight-Leg Raise',
+        quote: 'What we need is a few good taters.',
+        image: '../../assets/img/user-placeholder.svg',
+        items: [
+          { title: 'Race', note: 'Hobbit' },
+          { title: 'Culture', note: 'Shire Folk' },
+          { title: 'Nickname', note: 'Sam' }
+        ]
+      },
+      {
+        name: 'Trunk Stability Pushup',
+        quote: 'What we need is a few good taters.',
+        image: '../../assets/img/user-placeholder.svg',
+        items: [
+          { title: 'Race', note: 'Hobbit' },
+          { title: 'Culture', note: 'Shire Folk' },
+          { title: 'Nickname', note: 'Sam' }
+        ]
+      },
+      {
+        name: 'Rotary Stability',
         quote: 'What we need is a few good taters.',
         image: '../../assets/img/user-placeholder.svg',
         items: [
