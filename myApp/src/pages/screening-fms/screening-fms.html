@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="fmsRed">
     <ion-title>Screening</ion-title>
   </ion-navbar>
 
@@ -15,32 +15,51 @@
 
 <ion-content >
 
-  <ion-list>
-    <ion-list-header>
-      Functional Movement Screen
-    </ion-list-header>
-    <a ion-item (click)="openModal({charNum: 0})">
-      Deep Squat
-    </a>
-    <a ion-item (click)="openModal({charNum: 1})">
-      Hurdle Step
-    </a>
-    <a ion-item (click)="openModal({charNum: 2})">
-      Inline Lunge
-    </a>
-    <a ion-item (click)="openModal({charNum: 3})">
-      Shoulder Mobility
-    </a>
-    <a ion-item (click)="openModal({charNum: 4})">
-      Active Straight-Leg Raise
-    </a>
-    <a ion-item (click)="openModal({charNum: 5})">
-      Trunk Stability Pushup
-    </a>
-    <a ion-item (click)="openModal({charNum: 6})">
-      Rotary Stability
-    </a>
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col col-6 (click)="openModal({charNum: 0})">
+        <img src="../../assets/img/deep-squat-01.svg" style="max-height: 80px"/>
+        Deep Squat
+      </ion-col>
+      <ion-col col-6 (click)="openModal({charNum: 1})">
+        <img src="../../assets/img/hurdle-step.svg" style="max-height: 80px"/>
+        Hurdle Step
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 (click)="openModal({charNum: 2})">
+        <img src="../../assets/img/inline-lunge-01.svg" style="max-height: 80px"/>
+        Inline Lunge
+      </ion-col>
+      <ion-col col-6 (click)="openModal({charNum: 3})">
+        <img src="../../assets/img/shoulder-mobility-01.svg" style="max-height: 80px"/>
+        Shoulder Mobility
+      </ion-col>
+    </ion-row>
 
-  </ion-list>
+
+    <ion-row>
+      <ion-col col-6 (click)="openModal({charNum: 4})">
+        <img src="../../assets/img/active-straight-leg-raise-01.svg" style="max-height: 80px"/>
+        Active Straight-Leg Raise
+      </ion-col>
+      <ion-col col-6 (click)="openModal({charNum: 5})">
+        <img src="../../assets/img/trunk-stability-pushup-01.svg" style="max-height: 80px"/>
+        Trunk Stability Pushup
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 (click)="openModal({charNum: 6})">
+        <img src="../../assets/img/rotary-stability-01.svg" style="max-height: 80px"/>
+        Rotary Stability
+      </ion-col>
+      <ion-col col-6>
+
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+  <button ion-button full block color="primary" (click)="doConfirm()">Complete Screen</button>
 
 </ion-content>
