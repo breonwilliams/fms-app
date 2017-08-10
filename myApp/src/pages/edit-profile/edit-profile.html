@@ -20,23 +20,26 @@
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>First Name</ion-label>
+      <ion-label stacked><span style="color: rgb(235,34,39);">*</span> First Name</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Last Name</ion-label>
+      <ion-label stacked><span style="color: rgb(235,34,39);">*</span> Last Name</ion-label>
       <ion-input type="text" value=""></ion-input>
     </ion-item>
 
-
-    <ion-item>
-      <ion-label stacked>Gender</ion-label>
-      <ion-select >
-        <ion-option value="Male">Male</ion-option>
-        <ion-option value="Female">Female</ion-option>
-      </ion-select>
-    </ion-item>
+    <div padding>
+      <ion-label stacked><span style="color: rgb(235,34,39);">*</span> Gender</ion-label>
+      <ion-segment>
+        <ion-segment-button value="male">
+          Male
+        </ion-segment-button>
+        <ion-segment-button value="female">
+          Female
+        </ion-segment-button>
+      </ion-segment>
+    </div>
 
     <ion-item>
       <ion-label stacked>Email:</ion-label>

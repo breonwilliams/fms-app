@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ManageClientsPage } from '../pages/manage-clients/manage-clients';
-import { RecentScreensPage } from '../pages/recent-screens/recent-screens';
 import { TermsConditionsPage } from '../pages/terms-conditions/terms-conditions';
 import { LogoutPage } from '../pages/logout/logout';
 
@@ -26,7 +25,6 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Manage Clients', component: ManageClientsPage },
-      { title: 'Recent Screens', component: RecentScreensPage },
       { title: 'Terms & Conditions', component: TermsConditionsPage },
       { title: 'Logout', component: LogoutPage }
     ];

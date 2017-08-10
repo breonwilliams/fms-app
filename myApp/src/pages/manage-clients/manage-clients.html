@@ -20,6 +20,9 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      <ion-avatar item-start>
+        <img src="../../assets/img/user-placeholder.svg" style="max-height: 60px"/>
+      </ion-avatar>
       {{ item }}
     </button>
   </ion-list>

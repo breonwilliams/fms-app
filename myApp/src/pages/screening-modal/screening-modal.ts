@@ -13,7 +13,6 @@ import { NavController, NavParams, ModalController, Platform, ViewController } f
   templateUrl: 'screening-modal.html',
 })
 export class ScreeningModalPage {
-
   character;
 
   constructor(
