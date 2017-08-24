@@ -14,6 +14,7 @@ import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 import { NewClientPage } from '../pages/new-client/new-client';
 import { ScreeningFmsPage } from '../pages/screening-fms/screening-fms';
 import { ScreeningModalPage } from '../pages/screening-modal/screening-modal';
+import { ScreenHistoryPage } from '../pages/screen-history/screen-history';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EditProfilePage,
     NewClientPage,
     ScreeningFmsPage,
-    ScreeningModalPage
+    ScreeningModalPage,
+    ScreenHistoryPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EditProfilePage,
     NewClientPage,
     ScreeningFmsPage,
-    ScreeningModalPage
+    ScreeningModalPage,
+    ScreenHistoryPage
   ],
   providers: [
     StatusBar,

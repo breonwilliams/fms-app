@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AlertController } from 'ionic-angular';
 import { EditProfilePage } from '../edit-profile/edit-profile';
 import { ScreeningFmsPage } from '../screening-fms/screening-fms';
+import { ScreenHistoryPage } from '../screen-history/screen-history';
 import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
 
 
@@ -19,12 +20,14 @@ import { NavController, NavParams, ModalController, ViewController, ToastControl
 export class ClientDetailsPage {
 
   pushFMSScreeningPage: any;
+  pushScreenHistory: any;
 
   item: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController, public alerCtrl: AlertController) {
     this.pushFMSScreeningPage = ScreeningFmsPage;
-    this.item = navParams.get('item')
+    this.item = navParams.get('item');
+    this.pushScreenHistory = ScreenHistoryPage;
   }
 
   openModal() {
