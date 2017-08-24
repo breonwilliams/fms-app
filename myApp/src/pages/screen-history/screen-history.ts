@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController, Platform, ViewController } from 'ionic-angular';
 import { ScreenResultsPage } from '../screen-results/screen-results';
 
 
@@ -18,8 +18,14 @@ export class ScreenHistoryPage {
 
   pushScreenResults: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.pushScreenResults = ScreenResultsPage;
+  }
+
+  openModal(characterNum) {
+
+    let modal = this.modalCtrl.create(ScreenResultsPage, characterNum);
+    modal.present();
   }
 
   ionViewDidLoad() {
