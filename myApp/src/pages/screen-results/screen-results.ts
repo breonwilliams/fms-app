@@ -23,42 +23,40 @@ export class ScreenResultsPage {
     var characters = [
       {
         name: 'FMS',
-        quote: 'Sneaky little hobbitses!',
+        quote: 'Level 1',
         image: '../../assets/img/user-placeholder.svg',
         items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'River Folk' },
-          { title: 'Alter Ego', note: 'Smeagol' }
+          { title: 'Deep Squat', note: '3' },
+          { title: 'Hurdle Step', note: '2' },
+          { title: 'Inline Lunge', note: '3' },
+          { title: 'Shoulder Mobility', note: '1' },
+          { title: 'Active-Straight Leg Raise', note: '2' },
+          { title: 'Trunk Stability Push-Up', note: '3' },
+          { title: 'Rotary Stability', note: '1' }
         ]
       },
       {
         name: 'SFMA',
-        quote: 'Go back, Sam! I\'m going to Mordor alone!',
+        quote: '',
         image: '../../assets/img/user-placeholder.svg',
         items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Weapon', note: 'Sting' }
+          
         ]
       },
       {
         name: 'FCS',
-        quote: 'Go back, Sam! I\'m going to Mordor alone!',
-        image: '../../assets/img/user-placeholder.svg',
+        quote: '',
+        image: '../../assets/img/FCS-icon.svg',
         items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Weapon', note: 'Sting' }
+
         ]
       },
       {
         name: 'YBT',
-        quote: 'Go back, Sam! I\'m going to Mordor alone!',
+        quote: '',
         image: '../../assets/img/user-placeholder.svg',
         items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Weapon', note: 'Sting' }
+
         ]
       },
     ];

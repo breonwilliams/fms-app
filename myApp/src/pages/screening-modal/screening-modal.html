@@ -29,12 +29,18 @@
 
     <ion-item>
       <ion-label>Scoring</ion-label>
-      <ion-select [(ngModel)]="screeningFMS" interface="popover">
-        <ion-option value="1">1</ion-option>
-        <ion-option value="2">2</ion-option>
-        <ion-option value="3">3</ion-option>
-      </ion-select>
     </ion-item>
+    <ion-segment padding>
+      <ion-segment-button value="1">
+        1
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        2
+      </ion-segment-button>
+      <ion-segment-button value="3">
+        3
+      </ion-segment-button>
+    </ion-segment>
 
     <button ion-button full block color="primary" (click)="dismiss()">Save</button>
   </ion-list>
