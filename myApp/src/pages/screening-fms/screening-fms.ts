@@ -16,6 +16,37 @@ import { ScreeningModalPage } from '../screening-modal/screening-modal';
 })
 export class ScreeningFmsPage {
 
+  public tapDeepSquat: number = 0;
+  public tapHurdleStep: number = 0;
+  public tapInlineLunge: number = 0;
+  public tapShoulderMobility: number = 0;
+  public tapActiveStraightLegRaise: number = 0;
+  public tapTrunkStabilityPushup: number = 0;
+  public tapRotaryStability: number = 0;
+
+  tapEvent0(e) {
+    this.tapDeepSquat++
+  }
+  tapEvent1(e) {
+    this.tapHurdleStep++
+  }
+  tapEvent2(e) {
+    this.tapInlineLunge++
+  }
+  tapEvent3(e) {
+    this.tapShoulderMobility++
+  }
+  tapEvent4(e) {
+    this.tapActiveStraightLegRaise++
+  }
+  tapEvent5(e) {
+    this.tapTrunkStabilityPushup++
+  }
+  tapEvent6(e) {
+    this.tapRotaryStability++
+  }
+
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 

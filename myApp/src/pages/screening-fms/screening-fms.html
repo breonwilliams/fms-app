@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar color="fmsRed">
+  <ion-navbar color="dark">
     <ion-title>Screening</ion-title>
   </ion-navbar>
 
@@ -15,51 +15,55 @@
 
 <ion-content >
 
-  <ion-grid text-center>
+  <ion-grid text-center class="screening">
     <ion-row>
-      <ion-col col-6 (click)="openModal({charNum: 0})">
-        <img src="../../assets/img/deep-squat-01.svg" style="max-height: 80px"/>
-        Deep Squat
+      <ion-col col-3 (press)="openModal({charNum: 0})" (tap)="tapEvent0($event)">
+        <img src="../../assets/img/deep-squat-01.svg" style="height: 80px"/>
+        <p><small>Deep Squat</small></p>
+        <ion-badge item-end color="secondary">{{tapDeepSquat}}</ion-badge>
       </ion-col>
-      <ion-col col-6 (click)="openModal({charNum: 1})">
-        <img src="../../assets/img/hurdle-step.svg" style="max-height: 80px"/>
-        Hurdle Step
+      <ion-col col-3 (press)="openModal({charNum: 1})" (tap)="tapEvent1($event)">
+        <img src="../../assets/img/hurdle-step.svg" style="height: 80px"/>
+        <p><small>Hurdle Step</small></p>
+        <ion-badge item-end color="secondary">{{tapHurdleStep}}</ion-badge>
       </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-6 (click)="openModal({charNum: 2})">
-        <img src="../../assets/img/inline-lunge-01.svg" style="max-height: 80px"/>
-        Inline Lunge
+      <ion-col col-3 (press)="openModal({charNum: 2})" (tap)="tapEvent2($event)">
+        <img src="../../assets/img/inline-lunge-01.svg" style="height: 80px"/>
+        <p><small>Inline Lunge</small></p>
+        <ion-badge item-end color="secondary">{{tapInlineLunge}}</ion-badge>
       </ion-col>
-      <ion-col col-6 (click)="openModal({charNum: 3})">
-        <img src="../../assets/img/shoulder-mobility-01.svg" style="max-height: 80px"/>
-        Shoulder Mobility
+      <ion-col col-3 (press)="openModal({charNum: 3})" (tap)="tapEvent3($event)">
+        <img src="../../assets/img/shoulder-mobility-01.svg" style="height: 80px"/>
+        <p><small>Shoulder Mobility</small></p>
+        <ion-badge item-end color="secondary">{{tapShoulderMobility}}</ion-badge>
       </ion-col>
     </ion-row>
 
 
     <ion-row>
-      <ion-col col-6 (click)="openModal({charNum: 4})">
+      <ion-col col-3 (press)="openModal({charNum: 4})" (tap)="tapEvent4($event)">
         <img src="../../assets/img/active-straight-leg-raise-01.svg" style="max-height: 80px"/>
-        Active Straight-Leg Raise
+        <p><small>Active Straight-Leg Raise</small></p>
+        <ion-badge item-end color="secondary">{{tapActiveStraightLegRaise}}</ion-badge>
       </ion-col>
-      <ion-col col-6 (click)="openModal({charNum: 5})">
+      <ion-col col-3 (press)="openModal({charNum: 5})" (tap)="tapEvent5($event)">
         <img src="../../assets/img/trunk-stability-pushup-01.svg" style="max-height: 80px"/>
-        Trunk Stability Pushup
+        <p><small>Trunk Stability Pushup</small></p>
+        <ion-badge item-end color="secondary">{{tapTrunkStabilityPushup}}</ion-badge>
       </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-6 (click)="openModal({charNum: 6})">
+      <ion-col col-3 (press)="openModal({charNum: 6})" (tap)="tapEvent6($event)">
         <img src="../../assets/img/rotary-stability-01.svg" style="max-height: 80px"/>
-        Rotary Stability
+        <p><small>Rotary Stability</small></p>
+        <ion-badge item-end color="secondary">{{tapRotaryStability}}</ion-badge>
       </ion-col>
-      <ion-col col-6>
+      <ion-col col-3>
 
       </ion-col>
     </ion-row>
-
 
   </ion-grid>
-  <button ion-button full block color="primary" (click)="doConfirm()">Complete Screen</button>
+
+
+  <button ion-button full block color="fmsRedSecondary" (click)="doConfirm()">Complete Screen</button>
 
 </ion-content>

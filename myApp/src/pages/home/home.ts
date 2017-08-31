@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { ManageClientsPage } from '../manage-clients/manage-clients';
 import { RecentScreensPage } from '../recent-screens/recent-screens';
+import { ScreeningFmsPage } from '../screening-fms/screening-fms';
 
 
 @Component({
@@ -15,11 +16,13 @@ export class HomePage {
   params: Object;
   pushPage: any;
   pushPage1: any;
+  pushPageScreeningFms: any;
 
 
   constructor(public navCtrl: NavController) {
     this.pushPage = ManageClientsPage;
     this.pushPage1 = RecentScreensPage;
+    this.pushPageScreeningFms = ScreeningFmsPage;
     this.params = { id: 42 };
 
 
