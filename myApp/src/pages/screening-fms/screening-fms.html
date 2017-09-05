@@ -41,26 +41,89 @@
 
 
     <ion-row>
-      <ion-col col-3 (press)="openModal({charNum: 4})" (tap)="tapEvent4($event)">
+      <ion-col col-4 (press)="openModal({charNum: 4})" (tap)="tapEvent4($event)">
         <img src="../../assets/img/active-straight-leg-raise-01.svg" style="max-height: 80px"/>
         <p><small>Active Straight-Leg Raise</small></p>
         <ion-badge item-end color="secondary">{{tapActiveStraightLegRaise}}</ion-badge>
       </ion-col>
-      <ion-col col-3 (press)="openModal({charNum: 5})" (tap)="tapEvent5($event)">
+      <ion-col col-4 (press)="openModal({charNum: 5})" (tap)="tapEvent5($event)">
         <img src="../../assets/img/trunk-stability-pushup-01.svg" style="max-height: 80px"/>
         <p><small>Trunk Stability Pushup</small></p>
         <ion-badge item-end color="secondary">{{tapTrunkStabilityPushup}}</ion-badge>
       </ion-col>
-      <ion-col col-3 (press)="openModal({charNum: 6})" (tap)="tapEvent6($event)">
+      <ion-col col-4 (press)="openModal({charNum: 6})" (tap)="tapEvent6($event)">
         <img src="../../assets/img/rotary-stability-01.svg" style="max-height: 80px"/>
         <p><small>Rotary Stability</small></p>
         <ion-badge item-end color="secondary">{{tapRotaryStability}}</ion-badge>
       </ion-col>
-      <ion-col col-3>
 
-      </ion-col>
     </ion-row>
 
+  </ion-grid>
+
+  <ion-item-divider color="light">Clearing Tests</ion-item-divider>
+
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col col-12>
+        <p><small>Shoulder</small></p>
+
+        <ion-row>
+          <ion-col col-6>
+            <ion-segment>
+              <ion-segment-button value="Lplus">
+                L+
+              </ion-segment-button>
+              <ion-segment-button value="Lminus">
+                L-
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+          <ion-col col-6>
+            <ion-segment>
+              <ion-segment-button value="Lplus">
+                R+
+              </ion-segment-button>
+              <ion-segment-button value="Lminus">
+                R-
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+        </ion-row>
+
+      </ion-col>
+
+
+      <ion-col col-6>
+
+        <ion-label stacked>Extension</ion-label>
+
+        <ion-segment>
+          <ion-segment-button value="plus">
+            +
+          </ion-segment-button>
+          <ion-segment-button value="minus">
+            -
+          </ion-segment-button>
+        </ion-segment>
+
+      </ion-col>
+
+      <ion-col col-6>
+
+        <ion-label stacked>Flexion</ion-label>
+
+        <ion-segment>
+          <ion-segment-button value="plus">
+            +
+          </ion-segment-button>
+          <ion-segment-button value="minus">
+            -
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+
+    </ion-row>
   </ion-grid>
 
 

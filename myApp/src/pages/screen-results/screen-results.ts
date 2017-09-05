@@ -24,7 +24,7 @@ export class ScreenResultsPage {
     var characters = [
       {
         name: 'FMS',
-        quote: 'Level 1',
+        date: 'Jul 1, 2017',
         image: '../../assets/img/FMS-icon.svg',
         items: [
           { title: 'Deep Squat', note: '3', description: '<ul><li>Torso is parallel with tibia or toward vertical</li><li>Femur is below horizontal</li><li>Knees do not track inside of feet</li><li>Dowel aligned over feet</li></ul>' },
@@ -38,7 +38,7 @@ export class ScreenResultsPage {
       },
       {
         name: 'SFMA',
-        quote: '',
+        date: 'Jul 5, 2017',
         image: '../../assets/img/SFMA-icon.svg',
         items: [
 
@@ -46,7 +46,7 @@ export class ScreenResultsPage {
       },
       {
         name: 'FCS',
-        quote: '',
+        date: 'Jul 20, 2017',
         image: '../../assets/img/FCS-icon.svg',
         items: [
 
@@ -54,7 +54,7 @@ export class ScreenResultsPage {
       },
       {
         name: 'YBT',
-        quote: '',
+        date: 'Jul 25, 2017',
         image: '../../assets/img/YBT-icon.svg',
         items: [
 

@@ -26,9 +26,9 @@ export class ScreeningModalPage {
         quote: 'Sneaky little hobbitses!',
         image: '../../assets/img/user-placeholder.svg',
         items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'River Folk' },
-          { title: 'Alter Ego', note: 'Smeagol' }
+          { image:'../../assets/img/deep-squat3-slide.jpg', title: '3', note: 'Torso is parallel with tibia or toward vertical. Femur is below horizontal. Knees do not track inside of feet. Dowel aligned over feet.' },
+          { image:'../../assets/img/deep-squat2-slide.jpg', title: '2', note: 'Torso is parallel with tibia or toward vertical. Femur is below horizontal. Knees do not track inside of feet. Dowel aligned over feet. Heels are elevated.' },
+          { image:'../../assets/img/deep-squat1-slide.jpg', title: '1', note: 'Tibia and torso are not parallel. Femur is not below horizontal. Knees track inside of feet. Dowel is not aligned over feet.' }
         ]
       },
       {
