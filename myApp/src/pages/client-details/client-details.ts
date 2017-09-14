@@ -3,6 +3,7 @@ import { AlertController } from 'ionic-angular';
 import { EditProfilePage } from '../edit-profile/edit-profile';
 import { ScreeningFmsPage } from '../screening-fms/screening-fms';
 import { ScreenHistoryPage } from '../screen-history/screen-history';
+import { ComingSoonPage } from '../coming-soon/coming-soon';
 import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
 
 
@@ -21,6 +22,7 @@ export class ClientDetailsPage {
 
   pushFMSScreeningPage: any;
   pushScreenHistory: any;
+  pushPageComingSoon: any;
 
   item: any;
 
@@ -28,6 +30,7 @@ export class ClientDetailsPage {
     this.pushFMSScreeningPage = ScreeningFmsPage;
     this.item = navParams.get('item');
     this.pushScreenHistory = ScreenHistoryPage;
+    this.pushPageComingSoon = ComingSoonPage;
   }
 
   openModal() {
