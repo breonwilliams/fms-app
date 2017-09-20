@@ -17,33 +17,61 @@ import { ScreeningModalPage } from '../screening-modal/screening-modal';
 export class ScreeningFmsPage {
 
   public tapDeepSquat: number = 0;
-  public tapHurdleStep: number = 0;
-  public tapInlineLunge: number = 0;
-  public tapShoulderMobility: number = 0;
-  public tapActiveStraightLegRaise: number = 0;
+  public tapHurdleStepLft: number = 0;
+  public tapHurdleStepRt: number = 0;
+  public tapInlineLungeLft: number = 0;
+  public tapInlineLungeRt: number = 0;
+  public tapShoulderMobilityLft: number = 0;
+  public tapShoulderMobilityRt: number = 0;
+  public tapActiveStraightLegRaiseLft: number = 0;
+  public tapActiveStraightLegRaiseRt: number = 0;
   public tapTrunkStabilityPushup: number = 0;
-  public tapRotaryStability: number = 0;
+  public tapRotaryStabilityLft: number = 0;
+  public tapRotaryStabilityRt: number = 0;
+  public clearTestShoulderLft: number = 0;
+  public clearTestShoulderRt: number = 0;
 
   tapEvent0(e) {
     this.tapDeepSquat++
   }
-  tapEvent1(e) {
-    this.tapHurdleStep++
+  tapEvent1L(e) {
+    this.tapHurdleStepLft++
   }
-  tapEvent2(e) {
-    this.tapInlineLunge++
+  tapEvent1R(e) {
+    this.tapHurdleStepRt++
   }
-  tapEvent3(e) {
-    this.tapShoulderMobility++
+  tapEvent2L(e) {
+    this.tapInlineLungeLft++
   }
-  tapEvent4(e) {
-    this.tapActiveStraightLegRaise++
+  tapEvent2R(e) {
+    this.tapInlineLungeRt++
+  }
+  tapEvent3L(e) {
+    this.tapShoulderMobilityLft++
+  }
+  tapEvent3R(e) {
+    this.tapShoulderMobilityRt++
+  }
+  tapEvent4L(e) {
+    this.tapActiveStraightLegRaiseLft++
+  }
+  tapEvent4R(e) {
+    this.tapActiveStraightLegRaiseRt++
   }
   tapEvent5(e) {
     this.tapTrunkStabilityPushup++
   }
-  tapEvent6(e) {
-    this.tapRotaryStability++
+  tapEvent6L(e) {
+    this.tapRotaryStabilityLft++
+  }
+  tapEvent6R(e) {
+    this.tapRotaryStabilityRt++
+  }
+  tapEvent7L(e) {
+    this.clearTestShoulderLft++
+  }
+  tapEvent7R(e) {
+    this.clearTestShoulderRt++
   }
 
 

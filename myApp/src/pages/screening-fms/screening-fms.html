@@ -22,39 +22,45 @@
         <p><small>Deep Squat</small></p>
         <ion-badge item-end color="secondary">{{tapDeepSquat}}</ion-badge>
       </ion-col>
-      <ion-col col-3 (press)="openModal({charNum: 1})" (tap)="tapEvent1($event)">
+      <ion-col col-3 (press)="openModal({charNum: 1})">
         <img src="../../assets/img/hurdle-step.svg" style="height: 80px"/>
         <p><small>Hurdle Step</small></p>
-        <ion-badge item-end color="secondary">{{tapHurdleStep}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent1L($event)" class="score-lft">{{tapHurdleStepLft}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent1R($event)" class="score-rt">{{tapHurdleStepRt}}</ion-badge>
       </ion-col>
-      <ion-col col-3 (press)="openModal({charNum: 2})" (tap)="tapEvent2($event)">
+      <ion-col col-3 (press)="openModal({charNum: 2})">
         <img src="../../assets/img/inline-lunge-01.svg" style="height: 80px"/>
         <p><small>Inline Lunge</small></p>
-        <ion-badge item-end color="secondary">{{tapInlineLunge}}</ion-badge>
+        <ion-badge item-end color="secondary" class="score-lft" (tap)="tapEvent2L($event)">{{tapInlineLungeLft}}</ion-badge>
+        <ion-badge item-end color="secondary" class="score-rt" (tap)="tapEvent2R($event)">{{tapInlineLungeRt}}</ion-badge>
       </ion-col>
-      <ion-col col-3 (press)="openModal({charNum: 3})" (tap)="tapEvent3($event)">
+      <ion-col col-3 (press)="openModal({charNum: 3})" >
         <img src="../../assets/img/shoulder-mobility-01.svg" style="height: 80px"/>
         <p><small>Shoulder Mobility</small></p>
-        <ion-badge item-end color="secondary">{{tapShoulderMobility}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent3L($event)" class="score-lft">{{tapShoulderMobilityLft}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent3R($event)" class="score-rt">{{tapShoulderMobilityRt}}</ion-badge>
       </ion-col>
     </ion-row>
 
 
     <ion-row>
-      <ion-col col-4 (press)="openModal({charNum: 4})" (tap)="tapEvent4($event)">
+
+      <ion-col col-4 (press)="openModal({charNum: 4})" >
         <img src="../../assets/img/active-straight-leg-raise-01.svg" style="max-height: 80px"/>
         <p><small>Active Straight-Leg Raise</small></p>
-        <ion-badge item-end color="secondary">{{tapActiveStraightLegRaise}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent4L($event)" class="score-lft">{{tapActiveStraightLegRaiseLft}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent4R($event)" class="score-rt">{{tapActiveStraightLegRaiseRt}}</ion-badge>
       </ion-col>
       <ion-col col-4 (press)="openModal({charNum: 5})" (tap)="tapEvent5($event)">
         <img src="../../assets/img/trunk-stability-pushup-01.svg" style="max-height: 80px"/>
         <p><small>Trunk Stability Pushup</small></p>
         <ion-badge item-end color="secondary">{{tapTrunkStabilityPushup}}</ion-badge>
       </ion-col>
-      <ion-col col-4 (press)="openModal({charNum: 6})" (tap)="tapEvent6($event)">
+      <ion-col col-4 (press)="openModal({charNum: 6})" >
         <img src="../../assets/img/rotary-stability-01.svg" style="max-height: 80px"/>
         <p><small>Rotary Stability</small></p>
-        <ion-badge item-end color="secondary">{{tapRotaryStability}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent6L($event)" class="score-lft">{{tapRotaryStabilityLft}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent6R($event)" class="score-rt">{{tapRotaryStabilityRt}}</ion-badge>
       </ion-col>
 
     </ion-row>
@@ -63,65 +69,28 @@
 
   <ion-item-divider color="light">Clearing Tests</ion-item-divider>
 
-  <ion-grid text-center>
+  <ion-grid text-center class="screening">
     <ion-row>
-      <ion-col col-12>
+
+      <ion-col col-4 (press)="openModal({charNum: 3})" >
+        <img src="../../assets/img/shoulder-mobility-01.svg" style="height: 80px"/>
         <p><small>Shoulder</small></p>
-
-        <ion-row>
-          <ion-col col-6>
-            <ion-segment>
-              <ion-segment-button value="Lplus">
-                L+
-              </ion-segment-button>
-              <ion-segment-button value="Lminus">
-                L-
-              </ion-segment-button>
-            </ion-segment>
-          </ion-col>
-          <ion-col col-6>
-            <ion-segment>
-              <ion-segment-button value="Lplus">
-                R+
-              </ion-segment-button>
-              <ion-segment-button value="Lminus">
-                R-
-              </ion-segment-button>
-            </ion-segment>
-          </ion-col>
-        </ion-row>
-
+        <ion-badge item-end color="secondary" (tap)="tapEvent7L($event)" class="score-lft">{{clearTestShoulderLft}}</ion-badge>
+        <ion-badge item-end color="secondary" (tap)="tapEvent7R($event)" class="score-rt">{{clearTestShoulderRt}}</ion-badge>
       </ion-col>
 
-
-      <ion-col col-6>
-
-        <ion-label stacked>Extension</ion-label>
-
-        <ion-segment>
-          <ion-segment-button value="plus">
-            +
-          </ion-segment-button>
-          <ion-segment-button value="minus">
-            -
-          </ion-segment-button>
-        </ion-segment>
-
+      <ion-col col-4 (press)="openModal({charNum: 3})" >
+        <img src="../../assets/img/trunk-stability-pushup-01.svg" style="height: 80px"/>
+        <p><small>Extension</small></p>
+        <ion-badge item-end color="secondary" (tap)="tapEvent7L($event)">{{clearTestShoulderLft}}</ion-badge>
       </ion-col>
 
-      <ion-col col-6>
-
-        <ion-label stacked>Flexion</ion-label>
-
-        <ion-segment>
-          <ion-segment-button value="plus">
-            +
-          </ion-segment-button>
-          <ion-segment-button value="minus">
-            -
-          </ion-segment-button>
-        </ion-segment>
+      <ion-col col-4 (press)="openModal({charNum: 3})" >
+        <img src="../../assets/img/trunk-stability-pushup-01.svg" style="height: 80px"/>
+        <p><small>Flexion</small></p>
+        <ion-badge item-end color="secondary" (tap)="tapEvent7L($event)">{{clearTestShoulderLft}}</ion-badge>
       </ion-col>
+
 
     </ion-row>
   </ion-grid>
