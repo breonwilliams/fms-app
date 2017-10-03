@@ -80,6 +80,24 @@ export class ScreeningModalPage {
           { image:'../../assets/img/rotary-stability2-slide.jpg', title: '2', note: 'Performs a correct diagonal repetition. The diagonal knee and elbow meet over the board. Without touching down, touch the opposite elbow and knee over the board.' },
           { image:'../../assets/img/rotary-stability1-slide.jpg', title: '1', note: 'Inability to perform a diagonal repetition.' }
         ]
+      },
+      {
+        name: 'Shoulder',
+        items: [
+          { image:'../../assets/img/shoulder-clearing-test-slide.jpg', title: '', note: 'Perform this clearing test bilaterally. If the individual receives a positive score, document both scores for future reference. If there is pain associated with this movement, give a score of zero and perform a thorough evaluation of the shoulder or refer out.'}
+        ]
+      },
+      {
+        name: 'Extension',
+        items: [
+          { image:'../../assets/img/extension-clearing-test-slide.jpg', title: '1', note: 'Extension is cleared by performing a press-up in from the floor with hands under the shoulders. If there is pain associated with this motion, give a zero and perform a more thorough evaluation or refer out. If the individual does receive a positive score, document both scores for future reference' }
+        ]
+      },
+      {
+        name: 'Flexion',
+        items: [
+          { image:'../../assets/img/flexion-clearing-test-slide.jpg', title: '1', note: 'Flexion can be cleared by first assuming a quadruped position, then rocking back and touching the buttocks to the heels and chest to the thighs, The hands should remain in the front of the body, reaching out as far as possible. If there is pain associated with this motion, give a zero and perform a more thorough evaluation or refer out. If the individual receives a positive score, document both scores for future reference.' }
+        ]
       }
     ];
     this.character = characters[this.params.get('charNum')];

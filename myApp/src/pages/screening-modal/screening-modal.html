@@ -24,7 +24,7 @@
   <ion-slides pager>
 
     <ion-slide *ngFor="let item of character['items']">
-      <img src="{{item.image}}" class="slide-image"/>
+      <img src="{{item.image}}" class="slide-image" style="max-height: 250px;"/>
       <h2 class="slide-title">{{item.title}}</h2>
       <p item-end><small>{{item.note}}</small></p>
     </ion-slide>
