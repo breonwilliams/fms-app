@@ -5,6 +5,7 @@ import { ManageClientsPage } from '../manage-clients/manage-clients';
 import { RecentScreensPage } from '../recent-screens/recent-screens';
 import { ScreeningFmsPage } from '../screening-fms/screening-fms';
 import { NewClientPage } from '../new-client/new-client';
+import { ScreeningFcsPage } from '../screening-fcs/screening-fcs';
 import { ComingSoonPage } from '../coming-soon/coming-soon';
 
 @Component({
@@ -18,6 +19,7 @@ export class HomePage {
   pushPage: any;
   pushPage1: any;
   pushPageScreeningFms: any;
+  pushPageScreeningFcs: any;
   pushPageComingSoon: any;
 
 
@@ -25,6 +27,7 @@ export class HomePage {
     this.pushPage = ManageClientsPage;
     this.pushPage1 = RecentScreensPage;
     this.pushPageScreeningFms = ScreeningFmsPage;
+    this.pushPageScreeningFcs = ScreeningFcsPage;
     this.pushPageComingSoon = ComingSoonPage;
     this.params = { id: 42 };
 
