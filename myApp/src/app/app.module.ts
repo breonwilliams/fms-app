@@ -18,6 +18,9 @@ import { ScreenHistoryPage } from '../pages/screen-history/screen-history';
 import { ComingSoonPage } from '../pages/coming-soon/coming-soon';
 import { ScreeningFcsPage } from '../pages/screening-fcs/screening-fcs';
 import { ScreeningModalFcsPage } from '../pages/screening-modal-fcs/screening-modal-fcs';
+import { ScreeningYbtPage } from '../pages/screening-ybt/screening-ybt';
+import { ScreeningModalYbtPage } from '../pages/screening-modal-ybt/screening-modal-ybt';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -40,7 +43,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreenHistoryPage,
     ComingSoonPage,
     ScreeningFcsPage,
-    ScreeningModalFcsPage
+    ScreeningModalFcsPage,
+    ScreeningYbtPage,
+    ScreeningModalYbtPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreenHistoryPage,
     ComingSoonPage,
     ScreeningFcsPage,
-    ScreeningModalFcsPage
+    ScreeningModalFcsPage,
+    ScreeningYbtPage,
+    ScreeningModalYbtPage
   ],
   providers: [
     StatusBar,
