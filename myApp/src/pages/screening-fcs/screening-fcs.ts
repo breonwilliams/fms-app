@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController, Platform, ViewController } from 'ionic-angular';
 
 import { ScreeningModalFcsPage } from '../screening-modal-fcs/screening-modal-fcs';
+import { ScreeningModalFcsLowermcsPage } from '../screening-modal-fcs-lowermcs/screening-modal-fcs-lowermcs';
 
 
 /**
@@ -21,10 +22,14 @@ export class ScreeningFcsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
-  openModal(characterNum) {
+  openModal() {
+    let myModal = this.modalCtrl.create(ScreeningModalFcsPage);
+    myModal.present();
+  }
 
-    let modal = this.modalCtrl.create(ScreeningModalFcsPage, characterNum);
-    modal.present();
+  openLowermcsModal() {
+    let lowermcsModal = this.modalCtrl.create(ScreeningModalFcsLowermcsPage);
+    lowermcsModal.present();
   }
 
   ionViewDidLoad() {

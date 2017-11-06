@@ -18,6 +18,7 @@ import { ScreenHistoryPage } from '../pages/screen-history/screen-history';
 import { ComingSoonPage } from '../pages/coming-soon/coming-soon';
 import { ScreeningFcsPage } from '../pages/screening-fcs/screening-fcs';
 import { ScreeningModalFcsPage } from '../pages/screening-modal-fcs/screening-modal-fcs';
+import { ScreeningModalFcsLowermcsPage } from '../pages/screening-modal-fcs-lowermcs/screening-modal-fcs-lowermcs';
 import { ScreeningYbtPage } from '../pages/screening-ybt/screening-ybt';
 import { ScreeningModalYbtPage } from '../pages/screening-modal-ybt/screening-modal-ybt';
 
@@ -44,6 +45,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ComingSoonPage,
     ScreeningFcsPage,
     ScreeningModalFcsPage,
+    ScreeningModalFcsLowermcsPage,
     ScreeningYbtPage,
     ScreeningModalYbtPage
   ],
@@ -69,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ComingSoonPage,
     ScreeningFcsPage,
     ScreeningModalFcsPage,
+    ScreeningModalFcsLowermcsPage,
     ScreeningYbtPage,
     ScreeningModalYbtPage
   ],

@@ -19,9 +19,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-item-divider color="light">Left Ankle Clearing</ion-item-divider>
 
-  <ion-grid style="padding-top: 0;">
+  <ion-list style="margin-bottom: 10px;">
+    <ion-list-header color="light">
+      Right Ankle Clearing
+    </ion-list-header>
+
     <ion-row>
       <ion-col col-12>
         <p style="line-height: 0; margin:15px 0;"><strong>Knee position:</strong></p>
@@ -61,15 +64,20 @@
             No Stretch Felt
           </ion-segment-button>
         </ion-segment>
-
       </ion-col>
 
     </ion-row>
-  </ion-grid>
 
-  <ion-item-divider color="light">Right Ankle Clearing</ion-item-divider>
+  </ion-list>
 
-  <ion-grid style="padding-top: 0;">
+
+
+
+  <ion-list style="margin-bottom: 10px;">
+    <ion-list-header color="light">
+      Left Ankle Clearing
+    </ion-list-header>
+
     <ion-row>
       <ion-col col-12>
         <p style="line-height: 0; margin:15px 0;"><strong>Knee position:</strong></p>
@@ -109,12 +117,12 @@
             No Stretch Felt
           </ion-segment-button>
         </ion-segment>
-
       </ion-col>
 
     </ion-row>
-  </ion-grid>
 
-  <button ion-button full block (click)="closeModal()" color="secondary" >Save</button>
+  </ion-list>
+
+  <button ion-button full block (click)="dismiss()" color="secondary" >Save</button>
 
 </ion-content>

@@ -1,3 +1,10 @@
 page-screening-fcs {
+  .screening [col-3], .screening [col-4] {
+    border-right: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+  }
 
+  .screening [col-3]:last-child, .screening [col-4]:last-child {
+    border-right: none;
+  }
 }

@@ -6,13 +6,71 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>screening-ybt</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Screening YBT</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+  <ion-grid text-center class="screening">
+
+    <ion-row>
+      <ion-col col-4 >
+        <img src="../../assets/img/anterior_reach.svg" style="height: 80px"/>
+        <p><small>Anterior Reach</small></p>
+
+      </ion-col>
+
+      <ion-col col-4 >
+        <img src="../../assets/img/posterormedial_reach.svg" style="height: 80px"/>
+        <p><small>Posterormedial Reach</small></p>
+
+      </ion-col>
+
+      <ion-col col-4 >
+        <img src="../../assets/img/posterorlateral_reach.svg" style="height: 80px"/>
+        <p><small>Posterorlateral Reach</small></p>
+
+      </ion-col>
+
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-4 >
+        <img src="../../assets/img/medial_reach.svg" style="height: 80px"/>
+        <p><small>Medial Reach</small></p>
+
+      </ion-col>
+
+
+      <ion-col col-4 >
+        <img src="../../assets/img/inferormedial_reach.svg" style="height: 80px"/>
+        <p><small>Inferormedial Reach</small></p>
+
+      </ion-col>
+
+      <ion-col col-4 >
+        <img src="../../assets/img/superolateral_reach.svg" style="height: 80px"/>
+        <p><small>Superolateral Reach</small></p>
+
+      </ion-col>
+
+    </ion-row>
+
+
+
+
+  </ion-grid>
+
+
+
+
+
+  <button ion-button full block color="secondary" (click)="doConfirm()">Complete Screen</button>
 
 </ion-content>
