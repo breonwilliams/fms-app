@@ -19,6 +19,11 @@ import { ComingSoonPage } from '../pages/coming-soon/coming-soon';
 import { ScreeningFcsPage } from '../pages/screening-fcs/screening-fcs';
 import { ScreeningModalFcsPage } from '../pages/screening-modal-fcs/screening-modal-fcs';
 import { ScreeningModalFcsLowermcsPage } from '../pages/screening-modal-fcs-lowermcs/screening-modal-fcs-lowermcs';
+import { ScreeningModalFcsWristextensionPage } from '../pages/screening-modal-fcs-wristextension/screening-modal-fcs-wristextension';
+import { ScreeningModalFcsCarryPage } from '../pages/screening-modal-fcs-carry/screening-modal-fcs-carry';
+import { ScreeningModalFcsHorizontaladdPage } from '../pages/screening-modal-fcs-horizontaladd/screening-modal-fcs-horizontaladd';
+import { ScreeningModalFcsJumpPage } from '../pages/screening-modal-fcs-jump/screening-modal-fcs-jump';
+import { ScreeningModalFcsJumpsinglePage } from '../pages/screening-modal-fcs-jumpsingle/screening-modal-fcs-jumpsingle';
 import { ScreeningYbtPage } from '../pages/screening-ybt/screening-ybt';
 import { ScreeningModalYbtPage } from '../pages/screening-modal-ybt/screening-modal-ybt';
 
@@ -46,6 +51,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningFcsPage,
     ScreeningModalFcsPage,
     ScreeningModalFcsLowermcsPage,
+    ScreeningModalFcsWristextensionPage,
+    ScreeningModalFcsCarryPage,
+    ScreeningModalFcsHorizontaladdPage,
+    ScreeningModalFcsJumpPage,
+    ScreeningModalFcsJumpsinglePage,
     ScreeningYbtPage,
     ScreeningModalYbtPage
   ],
@@ -72,6 +82,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningFcsPage,
     ScreeningModalFcsPage,
     ScreeningModalFcsLowermcsPage,
+    ScreeningModalFcsWristextensionPage,
+    ScreeningModalFcsCarryPage,
+    ScreeningModalFcsHorizontaladdPage,
+    ScreeningModalFcsJumpPage,
+    ScreeningModalFcsJumpsinglePage,
     ScreeningYbtPage,
     ScreeningModalYbtPage
   ],

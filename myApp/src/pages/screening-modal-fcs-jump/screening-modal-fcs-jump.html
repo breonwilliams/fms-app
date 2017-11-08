@@ -1,5 +1,5 @@
 <!--
-  Generated template for the ScreeningModalPage page.
+  Generated template for the ScreeningModalFcsJumpPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -20,33 +20,23 @@
 
 <ion-content>
 
-<ion-item>
-  <ion-label *ngIf="toggleValue === false">Inches</ion-label>
-  <ion-label *ngIf="toggleValue === true">Centimeters</ion-label>
-  <ion-toggle [(ngModel)]="toggleValue" color="light"></ion-toggle>
-</ion-item>
-
-  <ion-list>
-    <ion-list-header color="light">
-      Foot length
-    </ion-list-header>
-
-    <ion-item>
-      <ion-input type="text" placeholder="input foot length"></ion-input>
-    </ion-item>
-
-  </ion-list>
+  <ion-item>
+    <ion-label *ngIf="toggleValue === false">Inches</ion-label>
+    <ion-label *ngIf="toggleValue === true">Centimeters</ion-label>
+    <ion-toggle [(ngModel)]="toggleValue" color="light"></ion-toggle>
+  </ion-item>
 
 
 
   <ion-list>
     <ion-list-header color="light">
-      Left Max Reach Distance
+      Max Distance
     </ion-list-header>
 
     <ion-item>
-      <ion-range min="0" max="114" pin="true" [(ngModel)]="Left_max_reach_distance" color="secondary">
-      </ion-range>
+      <ion-item>
+        <ion-input type="text" placeholder="max distance"></ion-input>
+      </ion-item>
       <ion-badge color="secondary" item-right>{{Left_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
         <span *ngIf="toggleValue === true">CM</span></ion-badge>
     </ion-item>
@@ -55,18 +45,14 @@
 
   <ion-list>
     <ion-list-header color="light">
-      Right Max Reach Distance
+      Pain during testing?
     </ion-list-header>
-
     <ion-item>
-      <ion-range min="0" max="114" pin="true" [(ngModel)]="right_max_reach_distance" color="secondary">
-      </ion-range>
-      <ion-badge color="secondary" item-right>{{right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
+      <ion-label *ngIf="toggleValuePain === false">No</ion-label>
+      <ion-label *ngIf="toggleValuePain === true">Yes</ion-label>
+      <ion-toggle [(ngModel)]="toggleValuePain" color="primary"></ion-toggle>
     </ion-item>
-
   </ion-list>
-
 
 
 
