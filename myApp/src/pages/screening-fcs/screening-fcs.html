@@ -18,19 +18,19 @@
   <ion-grid text-center class="screening">
 
     <ion-row>
-      <ion-col col-4 (tap)="openModal()">
+      <ion-col col-4 (tap)="openAnkleclearingModal()" (press)="openModal({charNum: 10})">
         <img src="../../assets/img/ankle_clearing_right.svg" style="height: 80px"/>
         <p><small>Ankle Clearing</small></p>
 
       </ion-col>
 
-      <ion-col col-4 (tap)="openLowermcsModal()">
-        <img src="../../assets/img/lower_mcs_left.svg" style="height: 80px"/>
+      <ion-col col-4 (tap)="openLowermcsModal({charNumMCS: 0})" (press)="openModal({charNum: 11})">
+        <img src="../../assets/img/lower_mcs_right.svg" style="height: 80px"/>
         <p><small>Lower MCS</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 12})">
         <img src="../../assets/img/wrist_extension_clearing.svg" style="height: 80px"/>
         <p><small>Wrist Extension Clearing</small></p>
 
@@ -41,20 +41,20 @@
 
     <ion-row>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 13})">
         <img src="../../assets/img/horizontal_adduction_clearing_right.svg" style="height: 80px"/>
         <p><small>Horizontal Adduction Clearing</small></p>
 
       </ion-col>
 
 
-      <ion-col col-4 >
+      <ion-col col-4 (tap)="openLowermcsModal({charNumMCS: 1})" (press)="openModal({charNum: 14})">
         <img src="../../assets/img/upper_mcs_left.svg" style="height: 80px"/>
         <p><small>Upper MCS</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 15})">
         <img src="../../assets/img/broad_jump.svg" style="height: 80px"/>
         <p><small>Broad Jump</small></p>
 
@@ -63,19 +63,19 @@
     </ion-row>
 
     <ion-row>
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 16})">
         <img src="../../assets/img/broad_jump_hands_on_hips.svg" style="height: 80px"/>
         <p><small>Broad Jump Hands on Hips</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 17})">
         <img src="../../assets/img/single_leg_hop.svg" style="height: 80px"/>
         <p><small>Single-Leg Hop</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 18})">
         <img src="../../assets/img/double_broad_jump.svg" style="height: 80px"/>
         <p><small>Double Broad Jump</small></p>
 
@@ -84,19 +84,19 @@
     </ion-row>
 
     <ion-row>
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 19})">
         <img src="../../assets/img/triple_broad_jump.svg" style="height: 80px"/>
         <p><small>Triple Broad Jump</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 20})">
         <img src="../../assets/img/2_1_2_bound.svg" style="height: 80px"/>
         <p><small>2-1-2 Bound</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (press)="openModal({charNum: 21})">
         <img src="../../assets/img/carry_screen.svg" style="height: 80px"/>
         <p><small>Carry Screen</small></p>
 

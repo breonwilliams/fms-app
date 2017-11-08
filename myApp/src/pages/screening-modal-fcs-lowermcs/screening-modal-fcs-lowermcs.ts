@@ -14,13 +14,33 @@ import { NavController, NavParams, ModalController, Platform, ViewController } f
 })
 export class ScreeningModalFcsLowermcsPage {
 
-  constructor(
-      public platform: Platform,
-      public params: NavParams,
-      public viewCtrl: ViewController
-  ) {
+    toggleValue: boolean = false;
 
-  }
+    character;
+
+    constructor(
+        public platform: Platform,
+        public params: NavParams,
+        public viewCtrl: ViewController
+    ) {
+        var characters = [
+            /* charNum: 0 */
+            {
+                name: 'Lower MCS',
+                items: [
+                    { title: '' },
+                ]
+            },
+            /* charNum: 1 */
+            {
+                name: 'Upper MCS',
+                items: [
+                    { title: '' },
+                ]
+            }
+        ];
+        this.character = characters[this.params.get('charNumMCS')];
+    }
 
   dismiss() {
     this.viewCtrl.dismiss();
