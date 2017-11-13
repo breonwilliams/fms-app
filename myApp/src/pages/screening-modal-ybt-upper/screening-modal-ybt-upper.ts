@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController, Platform, ViewController } from 'ionic-angular';
 
 /**
- * Generated class for the ScreeningModalYbtPage page.
+ * Generated class for the ScreeningModalYbtUpperPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-screening-modal-ybt',
-  templateUrl: 'screening-modal-ybt.html',
+  selector: 'page-screening-modal-ybt-upper',
+  templateUrl: 'screening-modal-ybt-upper.html',
 })
-export class ScreeningModalYbtPage {
+export class ScreeningModalYbtUpperPage {
 
   toggleValue: boolean = false;
 
@@ -26,27 +26,20 @@ export class ScreeningModalYbtPage {
     var characters = [
       /* charNum: 0 */
       {
-        name: 'Anterior Reach',
+        name: 'Left Upper Quarter',
         items: [
           { title: '' },
         ]
       },
       /* charNum: 1 */
       {
-        name: 'Posterormedial Reach',
-        items: [
-          { title: '' },
-        ]
-      },
-      /* charNum: 2 */
-      {
-        name: 'Posterorlateral Reach',
+        name: 'Right Upper Quarter',
         items: [
           { title: '' },
         ]
       }
     ];
-    this.character = characters[this.params.get('characterNumLowerq')];
+    this.character = characters[this.params.get('characterNumUpperq')];
   }
 
   dismiss() {
@@ -54,7 +47,7 @@ export class ScreeningModalYbtPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ScreeningModalYbtPage');
+    console.log('ionViewDidLoad ScreeningModalYbtUpperPage');
   }
 
 }

@@ -18,19 +18,19 @@
   <ion-grid text-center class="screening">
 
     <ion-row>
-      <ion-col col-4 >
+      <ion-col col-4 (tap)="openLowerqModal({characterNumLowerq: 0})">
         <img src="../../assets/img/anterior_reach.svg" style="height: 80px"/>
         <p><small>Anterior Reach</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (tap)="openLowerqModal({characterNumLowerq: 1})">
         <img src="../../assets/img/posterormedial_reach.svg" style="height: 80px"/>
         <p><small>Posterormedial Reach</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
+      <ion-col col-4 (tap)="openLowerqModal({characterNumLowerq: 2})">
         <img src="../../assets/img/posterorlateral_reach.svg" style="height: 80px"/>
         <p><small>Posterorlateral Reach</small></p>
 
@@ -41,24 +41,19 @@
 
     <ion-row>
 
-      <ion-col col-4 >
+      <ion-col col-6 (tap)="openUpperqModal({characterNumUpperq: 0})">
         <img src="../../assets/img/medial_reach.svg" style="height: 80px"/>
-        <p><small>Medial Reach</small></p>
+        <p><small>Left Upper Quarter</small></p>
 
       </ion-col>
 
 
-      <ion-col col-4 >
-        <img src="../../assets/img/inferormedial_reach.svg" style="height: 80px"/>
-        <p><small>Inferormedial Reach</small></p>
+      <ion-col col-6 (tap)="openUpperqModal({characterNumUpperq: 1})">
+        <img src="../../assets/img/medial_reach_right.svg" style="height: 80px"/>
+        <p><small>Right Upper Quarter</small></p>
 
       </ion-col>
 
-      <ion-col col-4 >
-        <img src="../../assets/img/superolateral_reach.svg" style="height: 80px"/>
-        <p><small>Superolateral Reach</small></p>
-
-      </ion-col>
 
     </ion-row>
 

@@ -26,6 +26,7 @@ import { ScreeningModalFcsJumpPage } from '../pages/screening-modal-fcs-jump/scr
 import { ScreeningModalFcsJumpsinglePage } from '../pages/screening-modal-fcs-jumpsingle/screening-modal-fcs-jumpsingle';
 import { ScreeningYbtPage } from '../pages/screening-ybt/screening-ybt';
 import { ScreeningModalYbtPage } from '../pages/screening-modal-ybt/screening-modal-ybt';
+import { ScreeningModalYbtUpperPage } from '../pages/screening-modal-ybt-upper/screening-modal-ybt-upper';
 
 
 
@@ -57,7 +58,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningModalFcsJumpPage,
     ScreeningModalFcsJumpsinglePage,
     ScreeningYbtPage,
-    ScreeningModalYbtPage
+    ScreeningModalYbtPage,
+    ScreeningModalYbtUpperPage
   ],
   imports: [
     BrowserModule,
@@ -88,7 +90,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningModalFcsJumpPage,
     ScreeningModalFcsJumpsinglePage,
     ScreeningYbtPage,
-    ScreeningModalYbtPage
+    ScreeningModalYbtPage,
+    ScreeningModalYbtUpperPage
   ],
   providers: [
     StatusBar,
