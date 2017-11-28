@@ -14,6 +14,12 @@ import { NavController, NavParams, ModalController, Platform, ViewController } f
 })
 export class ScreeningModalFcsCarryPage {
 
+    public tapCarry: number = 0;
+
+    tapEvent0(e) {
+        this.tapCarry++
+    }
+
   constructor(
       public platform: Platform,
       public params: NavParams,

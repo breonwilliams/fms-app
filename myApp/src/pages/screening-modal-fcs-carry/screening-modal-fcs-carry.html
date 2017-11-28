@@ -20,54 +20,62 @@
 
 <ion-content>
 
+  <div style="float: left; width: 50%; border-right: solid 1px #eeeeee;">
+    <ion-list style="margin-bottom: 0;">
+      <ion-list-header color="light">
+        <small>Weight Carried</small>
+      </ion-list-header>
 
-
-  <ion-list>
-    <ion-list-header color="light">
-     Weight Carried
-    </ion-list-header>
-
-    <ion-item>
       <ion-item>
-        <ion-input type="text" placeholder="Weight Carried"></ion-input>
+        <ion-item>
+          <ion-input type="text" placeholder="Weight Carried"></ion-input>
+        </ion-item>
+        <ion-badge color="secondary" item-right>lbs</ion-badge>
       </ion-item>
-      <ion-badge color="secondary" item-right>lbs</ion-badge>
-    </ion-item>
 
-  </ion-list>
 
-  <ion-list>
-    <ion-list-header color="light">
-      Distance
-    </ion-list-header>
+    </ion-list>
+  </div>
 
-    <ion-item>
+  <div style="float: left; width: 50%;">
+    <ion-list style="margin-bottom: 0;">
+      <ion-list-header color="light">
+        <small>Percentage Carried</small>
+      </ion-list-header>
+
       <ion-item>
-        <ion-input type="text" placeholder="Distance"></ion-input>
+        <ion-item>
+          <ion-input type="text" placeholder="0"></ion-input>
+        </ion-item>
+        <ion-badge color="secondary" item-right>%</ion-badge>
       </ion-item>
-      <ion-badge color="secondary" item-right>ft</ion-badge>
-    </ion-item>
 
-  </ion-list>
+    </ion-list>
+  </div>
 
-  <ion-list>
-    <ion-list-header color="light">
-      Time
-    </ion-list-header>
+  <div style="clear: both;"></div>
 
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="Time"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>sec</ion-badge>
-    </ion-item>
 
-  </ion-list>
 
+
+
+
+  <ion-card>
+
+    <ion-card-header text-center>
+      <time style="font-size: 38px;">00:00:00</time>
+    </ion-card-header>
+
+    <ion-card-content text-center>
+      <!-- Add card content here! -->
+      <button ion-button small color="secondary" >Start</button> <button ion-button small color="primary" >Stop</button> <button ion-button small color="fmsBlue" >Reset</button>
+    </ion-card-content>
+
+  </ion-card>
 
   <ion-grid class="carry" style="max-width: 330px">
     <ion-row>
-      <ion-col col-3 >
+      <ion-col col-3 (tap)="tapEvent0($event)">
         <img src="../../assets/img/fcs-carry1.svg" style="height: 80px"/>
       </ion-col>
 
@@ -79,12 +87,25 @@
         <img src="../../assets/img/fcs-carry3.svg" style="height: 80px; padding-top: 24px;"/>
       </ion-col>
 
-      <ion-col col-3>
+      <ion-col col-3 (tap)="tapEvent0($event)">
         <img src="../../assets/img/fcs-carry4.svg" style="height: 80px; margin-left: -1px;"/>
       </ion-col>
     </ion-row>
 
   </ion-grid>
+  <ion-list>
+    <ion-list-header color="light">
+      Distance
+    </ion-list-header>
+
+    <ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="{{tapCarry}}"></ion-input>
+      </ion-item>
+      <ion-badge color="secondary" item-right>ft</ion-badge>
+    </ion-item>
+
+  </ion-list>
 
   <button ion-button full block (click)="dismiss()" color="secondary" >Save</button>
 
