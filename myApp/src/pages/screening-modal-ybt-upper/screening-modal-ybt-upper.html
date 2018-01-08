@@ -27,147 +27,179 @@
   </ion-item>
 
 
+  <div padding>
+    <ion-segment [(ngModel)]="trials">
+      <ion-segment-button value="trial1">
+        Trial 1
+      </ion-segment-button>
+      <ion-segment-button value="trial2">
+        Trial 2
+      </ion-segment-button>
+      <ion-segment-button value="trial3">
+        Trial 3
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 
-  <ion-list>
-    <ion-list-header color="light">
-      Trial 1
-    </ion-list-header>
+  <div [ngSwitch]="trials">
+    <ion-list *ngSwitchCase="'trial1'">
+      <!-- trial 1 start-->
+      <ion-list>
+        <ion-list-header color="light">
+          Trial 1
+        </ion-list-header>
 
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
-        <p><small>Medial</small></p>
-      </div>
-    </ion-item>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
+            <p><small>Medial</small></p>
+          </div>
+        </ion-item>
 
-  </ion-list>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
-        <p><small>Inferolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
+            <p><small>Inferolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
-        <p><small>Superolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
+            <p><small>Superolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
+      <!-- trial 1 end-->
+    </ion-list>
 
-  <ion-list>
-    <ion-list-header color="light">
-      Trial 2
-    </ion-list-header>
+    <ion-list *ngSwitchCase="'trial2'">
+      <!-- trial 2 start-->
+      <ion-list>
+        <ion-list-header color="light">
+          Trial 2
+        </ion-list-header>
 
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
-        <p><small>Medial</small></p>
-      </div>
-    </ion-item>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
+            <p><small>Medial</small></p>
+          </div>
+        </ion-item>
 
-  </ion-list>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
-        <p><small>Inferolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
+            <p><small>Inferolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
-        <p><small>Superolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
+            <p><small>Superolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
+      <!-- trial 2 end-->
+    </ion-list>
 
-  <ion-list>
-    <ion-list-header color="light">
-      Trial 3
-    </ion-list-header>
+    <ion-list *ngSwitchCase="'trial3'">
+      <!-- trial 3 start-->
+      <ion-list>
+        <ion-list-header color="light">
+          Trial 3
+        </ion-list-header>
 
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
-        <p><small>Medial</small></p>
-      </div>
-    </ion-item>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/medial_reach.svg" style="width: 50px"/>
+            <p><small>Medial</small></p>
+          </div>
+        </ion-item>
 
-  </ion-list>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
-        <p><small>Inferolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/inferormedial_reach.svg" style="width: 50px"/>
+            <p><small>Inferolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
 
-  <ion-list>
-    <ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="max distance"></ion-input>
-      </ion-item>
-      <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
-        <span *ngIf="toggleValue === true">CM</span></ion-badge>
-      <div item-left text-center>
-        <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
-        <p><small>Superolateral</small></p>
-      </div>
-    </ion-item>
-  </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="max distance"></ion-input>
+          </ion-item>
+          <ion-badge color="secondary" item-right>{{Right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
+            <span *ngIf="toggleValue === true">CM</span></ion-badge>
+          <div item-left text-center>
+            <img src="../../assets/img/superolateral_reach.svg" style="width: 50px"/>
+            <p><small>Superolateral</small></p>
+          </div>
+        </ion-item>
+      </ion-list>
+      <!-- trial 3 end-->
+    </ion-list>
+  </div>
+
+
+
+
+
 
 
 
