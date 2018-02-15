@@ -39,6 +39,9 @@
       </ion-item>
       <ion-badge color="secondary" item-right>{{Left_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
         <span *ngIf="toggleValue === true">CM</span></ion-badge>
+      <div item-left text-center>
+        <img src="../../assets/img/screen_images/fcs/broad_jump/distance-deselect.svg" style="width: 50px"/>
+      </div>
     </ion-item>
 
   </ion-list>
@@ -51,6 +54,9 @@
       <ion-label *ngIf="toggleValuePain === false">No</ion-label>
       <ion-label *ngIf="toggleValuePain === true">Yes</ion-label>
       <ion-toggle [(ngModel)]="toggleValuePain" color="primary"></ion-toggle>
+      <div item-left text-center>
+        <img src="../../assets/img/screen_images/fcs/broad_jump/broad_jump-pain.svg" style="width: 50px"/>
+      </div>
     </ion-item>
   </ion-list>
 

@@ -33,7 +33,11 @@
 
     <ion-item>
       <ion-input type="text" placeholder="input foot length"></ion-input>
+      <div item-left text-center>
+        <img src="../../assets/img/screen_images/fcs/lower_mcs/foot-length-deselect.svg" style="width: 30px"/>
+      </div>
     </ion-item>
+
 
   </ion-list>
 
@@ -49,6 +53,9 @@
       </ion-range>
       <ion-badge color="secondary" item-right>{{Left_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
         <span *ngIf="toggleValue === true">CM</span></ion-badge>
+      <div item-left text-center>
+        <img src="../../assets/img/screen_images/fcs/lower_mcs/left_max_reach_distance/lower_mcs-left_max-deselect.svg" style="width: 50px"/>
+      </div>
     </ion-item>
 
   </ion-list>
@@ -63,6 +70,9 @@
       </ion-range>
       <ion-badge color="secondary" item-right>{{right_max_reach_distance}} <span *ngIf="toggleValue === false">IN</span>
         <span *ngIf="toggleValue === true">CM</span></ion-badge>
+      <div item-left text-center>
+        <img src="../../assets/img/screen_images/fcs/lower_mcs/right_max_reach_distance/lower_mcs-right_max-deselect.svg" style="width: 50px"/>
+      </div>
     </ion-item>
 
   </ion-list>
