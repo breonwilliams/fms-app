@@ -29,6 +29,8 @@ import { ScreeningModalYbtPage } from '../pages/screening-modal-ybt/screening-mo
 import { ScreeningModalYbtUpperPage } from '../pages/screening-modal-ybt-upper/screening-modal-ybt-upper';
 import { Move2performPage } from '../pages/move2perform/move2perform';
 import { M2pSub1Page } from '../pages/m2p-sub1/m2p-sub1';
+import { M2pSub2Page } from '../pages/m2p-sub2/m2p-sub2';
+import { M2pSub3Page } from '../pages/m2p-sub3/m2p-sub3';
 
 
 
@@ -63,7 +65,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningModalYbtPage,
     ScreeningModalYbtUpperPage,
     Move2performPage,
-    M2pSub1Page
+    M2pSub1Page,
+    M2pSub2Page,
+    M2pSub3Page
   ],
   imports: [
     BrowserModule,
@@ -97,7 +101,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ScreeningModalYbtPage,
     ScreeningModalYbtUpperPage,
     Move2performPage,
-    M2pSub1Page
+    M2pSub1Page,
+    M2pSub2Page,
+    M2pSub3Page
   ],
   providers: [
     StatusBar,
