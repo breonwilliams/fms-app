@@ -31,6 +31,9 @@ import { Move2performPage } from '../pages/move2perform/move2perform';
 import { M2pSub1Page } from '../pages/m2p-sub1/m2p-sub1';
 import { M2pSub2Page } from '../pages/m2p-sub2/m2p-sub2';
 import { M2pSub3Page } from '../pages/m2p-sub3/m2p-sub3';
+import { M2pSub4Page } from '../pages/m2p-sub4/m2p-sub4';
+import { M2pSub5Page } from '../pages/m2p-sub5/m2p-sub5';
+import { M2pSub6Page } from '../pages/m2p-sub6/m2p-sub6';
 
 
 
@@ -67,7 +70,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Move2performPage,
     M2pSub1Page,
     M2pSub2Page,
-    M2pSub3Page
+    M2pSub3Page,
+    M2pSub4Page,
+    M2pSub5Page,
+    M2pSub6Page
   ],
   imports: [
     BrowserModule,
@@ -103,7 +109,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Move2performPage,
     M2pSub1Page,
     M2pSub2Page,
-    M2pSub3Page
+    M2pSub3Page,
+    M2pSub4Page,
+    M2pSub5Page,
+    M2pSub6Page
   ],
   providers: [
     StatusBar,
