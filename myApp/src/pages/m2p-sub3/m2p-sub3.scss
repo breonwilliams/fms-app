@@ -1,3 +1,22 @@
 page-m2p-sub3 {
+  .m2p ion-col ion-badge {
+    height: 20px;
+    width: 20px;
+    padding: 5px 0;
+    font-size: 10px;
+    text-align: center;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    border-radius: 50%!important;
+    padding-top: 5px;
+  }
 
+  .m2p [col-3], .m2p [col-9] {
+    border-right: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+  }
+
+  .m2p [col-3]:last-child, .m2p [col-9]:last-child {
+    border-right: none;
+  }
 }
