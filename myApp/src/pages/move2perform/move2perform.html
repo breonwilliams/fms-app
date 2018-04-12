@@ -15,21 +15,37 @@
 
 <ion-content >
 
+
+  <ion-list no-lines>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/user-placeholder.svg" />
+      </ion-thumbnail>
+      <h2>Josh Parker</h2>
+      <p>Primary Activity: Soccer</p>
+      <p>Age: 27(Feb. 3rd 1990)</p>
+      <p>Gender: Male</p>
+      <p>Height: Male(176cm)</p>
+      <p>Weight: 180 lbs(76kg)</p>
+    </ion-item>
+
+
+  </ion-list>
+
+
+
   <ion-list>
     <button ion-item [navPush]="pushPageM2pSub1">
-      Movement Efficiency Report
+      Movement Foundation
     </button>
     <button ion-item [navPush]="pushPageM2pSub2">
-      Movement Foundation Report
+      Movement Function
     </button>
     <button ion-item [navPush]="pushPageM2pSub3">
-      Movement Function Report
+      Movement Performance
     </button>
     <button ion-item [navPush]="pushPageM2pSub4">
-      Movement Performance Report
-    </button>
-    <button ion-item [navPush]="pushPageM2pSub5">
-      Movement Efficiency Report
+      Movement Category
     </button>
   </ion-list>
 </ion-content>
