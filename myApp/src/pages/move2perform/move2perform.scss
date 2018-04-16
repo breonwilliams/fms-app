@@ -1,3 +1,205 @@
 page-move2perform {
+  $gaugeSize: 20rem;
+  $sizra: .75rem;
+  $indicatorWidth: .3rem;
+  $indicatorColor: #202427;
+  $firstColor: #EA212D;
+  $secondColor: #F0652F;
+  $thirdColor: #FEF035;
+  $fourthColor: #1CA04F;
 
+  .gauge-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .gauge {
+    border: 1px solid #d2d8de;
+    margin: 20px auto;
+    width: $gaugeSize;
+    height: $gaugeSize;
+    border-radius: $gaugeSize;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      content: '';
+      display: block;
+      // border: 1px solid black;
+      background-color: white;
+      width: ($gaugeSize - 2rem);
+      height: ($gaugeSize - 2rem);
+      position: absolute;
+      transform: rotate(39deg) skewX(-12deg);
+      transform-origin: left top;
+      top: 40%;
+      left: 50%;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: $indicatorWidth * 5;
+      height: $indicatorWidth * 5;
+      border-radius: 50%;
+      background-color: $indicatorColor;
+      position: absolute;
+      z-index: 10;
+    }
+  }
+  @-moz-document url-prefix() { .gauge:after { margin-left: - $indicatorWidth * 2.5; margin-top: - $indicatorWidth * 2.5;} } // Hack for FF
+
+  .indicator {
+    //transform: rotate(90deg);
+    background-color: $indicatorColor;
+    height: $indicatorWidth;
+    width: $gaugeSize /2 - $gaugeSize /10;
+    position: absolute;
+    z-index: 2;
+    //align-self: center;
+    margin-left: - ($gaugeSize /2 - $gaugeSize /10)/2;
+    transform-origin: right center;
+    transition: all 1s ease;
+  }
+  @-moz-document url-prefix() { .indicator { margin-left: - ($gaugeSize /2 - $gaugeSize /10); } } // Hack for FF
+  @supports (-ms-ime-align:auto) { .indicator {margin-left: - ($gaugeSize /2 - $gaugeSize /10); } } // Hack for Edge
+
+
+  .parts {
+    position: relative;
+  }
+
+  .part {
+    width: ($gaugeSize) / 2;
+    height: ($gaugeSize) /2;
+    position: absolute;
+    .text {
+      position: absolute;
+      font-size: 12px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      border: .5rem solid white;
+      width: ($gaugeSize - 2rem) / 2;
+      height: ($gaugeSize - 2rem) /2;
+      transform-origin: bottom right;
+      top: -($gaugeSize - 0rem) / 2;
+      left: -($gaugeSize - 0rem) / 2;
+      border-radius: $gaugeSize 0 0;
+    }
+    &:nth-child(1) {
+      .text {
+        top: 0rem;
+        right: 210%;
+      }
+      &:before {
+        transform: rotate(-55deg);
+        box-shadow: inset 2px 4px 5px 0px rgba(0,0,0,.3),  inset 10px 10px 0px 0px rgba($firstColor, 1);
+      }
+    }
+    &:nth-child(2) {
+      .text {
+        top: -100%;
+        right: 150%;
+      }
+      &:before {
+        transform: rotate(30deg);
+        box-shadow: inset 2px 4px 5px 0px rgba(0,0,0,.3), inset 10px 10px 0px 0px rgba($secondColor, 1);
+      }
+    }
+    &:nth-child(3) {
+      .text {
+        top: -100%;
+        left: 50%;
+        // margin-left: -25%;
+      }
+      &:before {
+        transform: rotate(89deg);
+        box-shadow:  inset 2px 4px 5px 0px rgba(0,0,0,.3), inset 10px 10px 0px 0px rgba($thirdColor, 1);
+      }
+    }
+    &:nth-child(4) {
+      .text {
+        top: 0;
+        left: 100%;
+        margin-left: 10px;
+      }
+      &:before {
+        transform: rotate(150deg);
+        box-shadow:  inset 2px 4px 5px 0px rgba(0,0,0,.3), inset 10px 10px 0px 0px rgba($fourthColor, 1);
+      }
+    }
+  }
+
+  .score {
+    // border: 1px solid black;
+    width: $gaugeSize;
+    height: $gaugeSize / 2;
+    z-index: 10;
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+    padding: 1rem;
+    box-sizing: border-box;
+
+
+    h2, h3, {
+      margin: 50px 0 0!important;
+      text-align: center;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .main {
+    width: $gaugeSize;
+    height: $gaugeSize / 2;
+    border-radius: $gaugeSize $gaugeSize 0 0;
+    margin: 20px auto;
+    border: 1px solid black;
+    position: relative;
+    @extend %gradient;
+  }
+
+  #indicator {
+    margin: 0px auto;
+    width: 0;
+    height: 0;
+    border: $sizra solid transparent;
+    border-bottom: $sizra solid  $indicatorColor;
+    position: absolute;
+    bottom: -$sizra ;
+    left: $gaugeSize / 2 - $sizra;
+    &:after {
+      content: '';
+      position: absolute;
+      left: -$sizra;
+      top: $sizra - .05rem;
+      width: 0;
+      height: 0;
+      border: $sizra solid transparent;
+      border-top: $sizra * 12 solid  $indicatorColor;
+    }
+  }
+
+  %gradient {
+    /* IE10+ */
+    background-image: -ms-linear-gradient(right, #0DFF00 0%, #FFFF00 50%, #ff0000 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(right, #0DFF00 0%, #FFFF00 50%, #ff0000 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(right, #0DFF00 0%, #FFFF00 50%, #ff0000 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #0DFF00), color-stop(50, #FFFF00), color-stop(100, #ff0000));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(right, #0DFF00 0%, #FFFF00 50%, #ff0000 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to left, #0DFF00 0%, #FFFF00 50%, #ff0000 100%);
+  }
 }
