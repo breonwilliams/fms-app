@@ -41,29 +41,41 @@
           <div class="part">
           </div>
         </div>
-        <div class="indicator" style=" transform: rotateZ( 5deg ) ;"></div>
+        <div class="indicator" style=" transform: rotateZ( 60deg ) ;"></div>
         <div class="score">
-          <h3>Substantial Deficit</h3>
+          <h3>Moderate Deficit</h3>
         </div>
       </div>
     </div>
 
   </ion-list>
 
+  <ion-card>
+
+    <ion-card-content>
+      <p>You are in the MODERATE deficit category. Based on the research, the algorithm indicates you are more likely than your peers to lose time from your sport or activity.</p>
+    </ion-card-content>
+
+  </ion-card>
+
 
 
   <ion-list>
-    <button ion-item [navPush]="pushPageM2pSub1">
-      Movement Foundation
-    </button>
-    <button ion-item [navPush]="pushPageM2pSub2">
-      Movement Function
-    </button>
-    <button ion-item [navPush]="pushPageM2pSub3">
-      Movement Performance
-    </button>
-    <button ion-item [navPush]="pushPageM2pSub4">
-      Movement Category
-    </button>
+
+    <ion-item color="Fail" [navPush]="pushPageM2pSub1">
+      <ion-label>Movement Foundation</ion-label>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-item>
+
+    <ion-item color="Fail" [navPush]="pushPageM2pSub2">
+      <ion-label>Movement Function</ion-label>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-item>
+
+    <ion-item color="Fail" [navPush]="pushPageM2pSub3">
+      <ion-label>Movement Performance</ion-label>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-item>
+
   </ion-list>
 </ion-content>

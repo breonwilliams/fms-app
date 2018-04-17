@@ -35,14 +35,14 @@ $app-direction: ltr;
 
 $colors: (
         primary:    rgb(235,34,39),
-        fail: (
+        Fail: (
                 base: rgba(235,34,39,.2),
                 contrast: rgb(235,34,39)
         ),
 
         secondary:  rgb(93,182,91),
 
-        pass: (
+        Pass: (
                 base: rgba(93,182,91,.2),
                 contrast: rgb(93,182,91)
         ),

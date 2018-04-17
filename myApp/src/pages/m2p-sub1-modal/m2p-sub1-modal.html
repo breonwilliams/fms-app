@@ -20,7 +20,7 @@
 
   <ion-list no-lines *ngFor="let item of character['items']">
 
-    <ion-list-header color="light" (click)="openModal()">
+    <ion-list-header color="light" (click)="openModal()" color="{{item.passFail}}">
       {{item.header}}
     </ion-list-header>
 

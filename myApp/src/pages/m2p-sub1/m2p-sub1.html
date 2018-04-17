@@ -20,7 +20,7 @@
       Injury History
     </ion-list-header>
 
-    <ion-item color="pass" (click)="openModal({charNum: 0})">
+    <ion-item color="Pass" (click)="openModal({charNum: 0})">
       <ion-label>Injury History</ion-label>
       <ion-badge color="secondary" item-right>Pass</ion-badge>
       <div item-left text-center style="width: 30px;">
@@ -33,27 +33,27 @@
       Breathing Screen
     </ion-list-header>
 
-    <ion-item>
+    <ion-item color="Fail" (click)="openModal({charNum: 1})">
       <ion-label>Questionnaire</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
       <div item-left text-center style="width: 30px;">
         <img src="../../assets/img/move2perform/questionnaire.svg" style="height: 30px;"/>
       </div>
 
     </ion-item>
 
-    <ion-item>
+    <ion-item color="Fail" (click)="openModal({charNum: 1})">
       <ion-label>Functional Residual Capacity</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
       <div item-left text-center style="width: 30px;">
         <img src="../../assets/img/move2perform/breathing_frc_tlc.svg" style="height: 30px;"/>
       </div>
 
     </ion-item>
 
-    <ion-item>
+    <ion-item color="Fail" (click)="openModal({charNum: 1})">
       <ion-label>Total Lung Capacity</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
       <div item-left text-center style="width: 30px;">
         <img src="../../assets/img/move2perform/breathing_screen.svg" style="height: 30px;"/>
       </div>
@@ -64,9 +64,9 @@
       Functional Movement Screen
     </ion-list-header>
 
-    <ion-item>
+    <ion-item color="Fail" (click)="openModal({charNum: 2})">
       <ion-label>Extension Clearing Test</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
+      <ion-badge color="primary" item-right>Fail</ion-badge>
       <div item-left text-center style="width: 30px;">
         <img src="../../assets/img/move2perform/extension_clearing_test.svg" style="height: 30px;"/>
       </div>

@@ -11,10 +11,11 @@ page-move2perform {
   .gauge-container {
     overflow: hidden;
     position: relative;
+    margin: -20px 0 -40px;
   }
   .gauge {
     border: 1px solid #d2d8de;
-    margin: 20px auto;
+    margin: 20px auto -10px;
     width: $gaugeSize;
     height: $gaugeSize;
     border-radius: $gaugeSize;

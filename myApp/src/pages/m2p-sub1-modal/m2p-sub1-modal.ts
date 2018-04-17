@@ -27,9 +27,23 @@ export class M2pSub1ModalPage {
       {
         name: 'Injury History',
         items: [
-          { header:'Questionnaire', label: 'You scored 3 or above', score: '4 Points', note: 'Results from the Breathing Screen suggest you likely have some type of breathing dysfunction.' },
-          { header:'Functional Residual Capacity', label: 'You scored below 25 seconds', score: '20 seconds', note: 'Your FRC is considered dysfunctional' },
-          { header:'Total Lung Capacity', label: 'You scored below 35 seconds.', score: '20 seconds', note: 'Your TLC is considered dysfunctional' }
+          { header:'Questionnaire', label: 'You scored 3 or above', score: '4 Points', passFail: 'Fail', note: 'Results from the Breathing Screen suggest you likely have some type of breathing dysfunction.' }
+        ]
+      },
+      /* charNum: 1 */
+      {
+        name: 'Breathing Screen',
+        items: [
+          { header:'Questionnaire', label: 'You scored 3 or above', passFail: 'Fail', score: '4 Points', note: 'Results from the Breathing Screen suggest you likely have some type of breathing dysfunction.' },
+          { header:'Functional Residual Capacity', label: 'You scored below 25 seconds', passFail: 'Fail', score: '20 seconds', note: 'Your FRC is considered dysfunctional' },
+          { header:'Total Lung Capacity', label: 'You scored below 35 seconds.', passFail: 'Fail', score: '20 seconds', note: 'Your TLC is considered dysfunctional' }
+        ]
+      },
+      /* charNum: 2 */
+      {
+        name: 'Extension Clearing Test',
+        items: [
+          { header:'Results', label: 'Extension Clearing Test', passFail: 'Fail', score: '', note: 'The clearing test provoked pain. Based on this result, it is recommended that you seek an assessment from a health care provider. You should not progress with exercise in this painful pattern until it has been addressed by a health care professional. We do suggest connecting with an SFMA professional to better diagnose your pain.' }
         ]
       }
     ];
