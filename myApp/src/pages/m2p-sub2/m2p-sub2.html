@@ -7,7 +7,7 @@
 <ion-header color="dark">
 
   <ion-navbar color="dark">
-    <ion-title>Movement Foundation Report</ion-title>
+    <ion-title>Movement Function</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,83 +15,32 @@
 
 <ion-content>
 
-  <ion-list no-lines>
-    <ion-list-header color="light">
-      Movement Foundation
+  <ion-list no-lines style="margin-bottom: 0;">
+
+    <ion-list-header color="Fail">
+      Functional Movement Screen
     </ion-list-header>
-
-    <ion-item>
-      <ion-label>Injury History</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/health_history.svg" style="height: 30px;"/>
-      </div>
-
-    </ion-item>
-    <ion-item>
-      <ion-label>Medical History</ion-label>
-      <ion-checkbox color="secondary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/medical_history.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-    <ion-item>
-      <ion-label>Surgeries</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/surgeries.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Previous Injuries</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/previous_injuries.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Breathing Screen</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/breathing_screen.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Lung Capacity</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/breathing_screen.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Questionnaire</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/questionnaire.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Functional Movement Screen</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/movement_screen.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Extension Clearing Test</ion-label>
-      <ion-checkbox color="primary" item-right checked="true"></ion-checkbox>
-      <div item-left text-center style="width: 30px;">
-        <img src="../../assets/img/move2perform/extension_clearing_test.svg" style="height: 30px;"/>
-      </div>
-    </ion-item>
-
-
   </ion-list>
+  <ion-grid (click)="openModal()">
+    <ion-row>
+      <ion-col col-12>
+        <p>You failed to meet the minimum requirements for movement quality.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list no-lines style="margin-bottom: 0;">
+
+    <ion-list-header color="Pass">
+      Y-Balance Test
+    </ion-list-header>
+  </ion-list>
+  <ion-grid (click)="openModal2()">
+    <ion-row>
+      <ion-col col-12>
+        <p>You passed the Y-Balance test.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
+
+import { M2pSub2ModalPage } from '../m2p-sub2-modal/m2p-sub2-modal';
+import { M2pSub22ModalPage } from '../m2p-sub22-modal/m2p-sub22-modal';
+
 
 /**
  * Generated class for the M2pSub2Page page.
@@ -14,7 +18,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class M2pSub2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
+  }
+
+  openModal() {
+    let myModal = this.modalCtrl.create(M2pSub2ModalPage);
+    myModal.present();
+  }
+
+  openModal2() {
+    let myModal = this.modalCtrl.create(M2pSub22ModalPage);
+    myModal.present();
   }
 
   ionViewDidLoad() {
