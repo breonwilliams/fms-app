@@ -37,6 +37,8 @@ import { M2pSub6Page } from '../pages/m2p-sub6/m2p-sub6';
 import { M2pSub1ModalPage } from '../pages/m2p-sub1-modal/m2p-sub1-modal';
 import { M2pSub2ModalPage } from '../pages/m2p-sub2-modal/m2p-sub2-modal';
 import { M2pSub22ModalPage } from '../pages/m2p-sub22-modal/m2p-sub22-modal';
+import { M2pSub3ModalPage } from '../pages/m2p-sub3-modal/m2p-sub3-modal';
+import { M2pSub32ModalPage } from '../pages/m2p-sub32-modal/m2p-sub32-modal';
 
 
 
@@ -80,7 +82,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     M2pSub6Page,
     M2pSub1ModalPage,
     M2pSub2ModalPage,
-    M2pSub22ModalPage
+    M2pSub22ModalPage,
+    M2pSub3ModalPage,
+    M2pSub32ModalPage
   ],
   imports: [
     BrowserModule,
@@ -122,7 +126,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     M2pSub6Page,
     M2pSub1ModalPage,
     M2pSub2ModalPage,
-    M2pSub22ModalPage
+    M2pSub22ModalPage,
+    M2pSub3ModalPage,
+    M2pSub32ModalPage
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController, ToastController } from 'ionic-angular';
+
+import { M2pSub3ModalPage } from '../m2p-sub3-modal/m2p-sub3-modal';
+import { M2pSub32ModalPage } from '../m2p-sub32-modal/m2p-sub32-modal';
 
 /**
  * Generated class for the M2pSub3Page page.
@@ -14,7 +17,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class M2pSub3Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  pushPageM3pSub1: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
+    this.pushPageM3pSub1 = M2pSub3ModalPage;
   }
 
   ionViewDidLoad() {
