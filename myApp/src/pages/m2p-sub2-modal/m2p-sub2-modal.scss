@@ -1,3 +1,10 @@
 page-m2p-sub2-modal {
+  .m2p [col-3], .m2p [col-9] {
+    border-right: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+  }
 
+  .m2p [col-3]:last-child, .m2p [col-9]:last-child {
+    border-right: none;
+  }
 }
