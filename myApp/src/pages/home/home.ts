@@ -9,6 +9,7 @@ import { ScreeningFcsPage } from '../screening-fcs/screening-fcs';
 import { ScreeningYbtPage } from '../screening-ybt/screening-ybt';
 import { ComingSoonPage } from '../coming-soon/coming-soon';
 import { Move2performPage } from '../move2perform/move2perform';
+import { FcsReportPage } from '../fcs-report/fcs-report';
 
 @Component({
   selector: 'page-home',
@@ -25,6 +26,7 @@ export class HomePage {
   pushPageScreeningYbt: any;
   pushPageComingSoon: any;
   pushPageMove2performPage: any;
+  pushPageFcsReportPage: any;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
@@ -35,6 +37,7 @@ export class HomePage {
     this.pushPageScreeningYbt = ScreeningYbtPage;
     this.pushPageComingSoon = ComingSoonPage;
     this.pushPageMove2performPage = Move2performPage;
+    this.pushPageFcsReportPage = FcsReportPage;
     this.params = { id: 42 };
 
 

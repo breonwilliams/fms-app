@@ -7,4 +7,15 @@ page-m2p-sub2-modal {
   .m2p [col-3]:last-child, .m2p [col-9]:last-child {
     border-right: none;
   }
+
+  .vertical-align-content {
+    display: flex!important;
+    align-content: center!important;
+    align-items: center!important;
+  }
+
+  .vertical-align-content .badge {
+    margin: auto;
+  }
+
 }
