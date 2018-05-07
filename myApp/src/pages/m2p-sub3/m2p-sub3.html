@@ -15,22 +15,67 @@
 
 <ion-content class="m2p">
 
-  <ion-list no-lines [navPush]="pushPageM3pSub1">
 
+  <ion-list no-lines style="margin-bottom: 0;" [navPush]="pushPageM3pSub1">
 
-    <ion-grid>
-
-      <ion-row>
-        <ion-col col-12>
-          <p>This graph displays your results distribution of the 4  quadrants relating to performance.</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-    <img padding src="../../assets/img/move2perform/radar-chart.svg" />
-    <button ion-button block full color="primary">More Info</button>
+    <ion-list-header color="Fail">
+      Movement Control
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-list-header>
   </ion-list>
+  <ion-grid [navPush]="pushPageM3pSub1">
+    <ion-row>
+      <ion-col col-12>
+        <p>You failed to meet the minimal requirements for movement control.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
+
+  <ion-list no-lines style="margin-bottom: 0;">
+
+    <ion-list-header color="Pass">
+      Postural Control
+      <ion-badge color="secondary" item-right>Pass</ion-badge>
+    </ion-list-header>
+  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p>You passed the minimal requirements for postural control.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list no-lines style="margin-bottom: 0;">
+
+    <ion-list-header color="Fail">
+      Expolosive Control
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-list-header>
+  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p>You failed to meet the minimal requirements for explosive control.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list no-lines style="margin-bottom: 0;">
+
+    <ion-list-header color="Fail">
+      Movement Control
+      <ion-badge color="primary" item-right>Fail</ion-badge>
+    </ion-list-header>
+  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <p>You failed to meet the minimal requirements for impact control.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 
 
