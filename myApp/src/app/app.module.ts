@@ -42,6 +42,7 @@ import { M2pSub32ModalPage } from '../pages/m2p-sub32-modal/m2p-sub32-modal';
 import { FcsReportPage } from '../pages/fcs-report/fcs-report';
 import { FcsReportEfficiencyPage } from '../pages/fcs-report-efficiency/fcs-report-efficiency';
 import { FcsReportEfficiencySub1Page } from '../pages/fcs-report-efficiency-sub1/fcs-report-efficiency-sub1';
+import { FcsReportComparisonPage } from '../pages/fcs-report-comparison/fcs-report-comparison';
 
 
 
@@ -90,7 +91,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     M2pSub32ModalPage,
     FcsReportPage,
     FcsReportEfficiencyPage,
-    FcsReportEfficiencySub1Page
+    FcsReportEfficiencySub1Page,
+    FcsReportComparisonPage
   ],
   imports: [
     BrowserModule,
@@ -137,7 +139,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     M2pSub32ModalPage,
     FcsReportPage,
     FcsReportEfficiencyPage,
-    FcsReportEfficiencySub1Page
+    FcsReportEfficiencySub1Page,
+    FcsReportComparisonPage
   ],
   providers: [
     StatusBar,

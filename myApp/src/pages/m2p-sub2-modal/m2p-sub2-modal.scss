@@ -4,7 +4,11 @@ page-m2p-sub2-modal {
     border-bottom: solid 1px #eee;
   }
 
-  .m2p [col-3]:last-child, .m2p [col-9]:last-child {
+  .m2p [col-4] {
+    border-right: solid 1px #eee;
+  }
+
+  .m2p [col-3]:last-child, .m2p [col-9]:last-child, .m2p [col-4]:last-child {
     border-right: none;
   }
 

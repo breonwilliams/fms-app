@@ -66,13 +66,13 @@
   </ion-grid>
 
 
-  <ion-list no-lines style="margin-bottom: 0;">
+  <ion-list no-lines style="margin-bottom: 0;" [navPush]="pushPage2">
 
     <ion-list-header color="light">
       Comparison Report
     </ion-list-header>
   </ion-list>
-  <ion-grid>
+  <ion-grid [navPush]="pushPage2">
     <ion-row>
       <ion-col col-12>
         <p>Results based off of who you wish to compare your specific data to.</p>
