@@ -15,71 +15,202 @@
 
 <ion-content>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col col-12>
-        <p>Your results are divided into four different reports ranking your FCS performance.</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-list no-lines style="margin-bottom: 0;">
-
-    <ion-list-header color="light">
-      Effectiveness Report
-    </ion-list-header>
-  </ion-list>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-12>
-        <p>This shows how you did in comparison to baseline minimums.</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-list no-lines style="margin-bottom: 0;" [navPush]="pushPage">
-
-    <ion-list-header color="light">
-      Efficiency Report
-    </ion-list-header>
-  </ion-list>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-12>
-        <p>This shows how symmetrically balanced you are.</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-list no-lines style="margin-bottom: 0;">
-
-    <ion-list-header color="light">
-      Durability Report
-    </ion-list-header>
-  </ion-list>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-12>
-        <p>Results of your overall effectiveness and efficiency generating you performance</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 
 
-  <ion-list no-lines style="margin-bottom: 0;" [navPush]="pushPage2">
-
-    <ion-list-header color="light">
-      Comparison Report
-    </ion-list-header>
-  </ion-list>
-  <ion-grid [navPush]="pushPage2">
-    <ion-row>
-      <ion-col col-12>
-        <p>Results based off of who you wish to compare your specific data to.</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 
 
+  <div padding>
+    <ion-segment [(ngModel)]="fcsReports">
+      <ion-segment-button value="Effectiveness">
+        Effectiveness
+      </ion-segment-button>
+      <ion-segment-button value="Efficiency">
+        Efficiency
+      </ion-segment-button>
+      <ion-segment-button value="Durability">
+        Durability
+      </ion-segment-button>
+      <ion-segment-button value="Comparison">
+        Comparison
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="fcsReports">
+    <ion-list *ngSwitchCase="'Effectiveness'">
+      Effectiveness
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Efficiency'" padding>
+
+
+      <p text-center>This graph displays your results distribution of the 4  quadrants relating to performance.</p>
+
+      <img padding src="../../assets/img/move2perform/radar-chart.svg" />
+
+      <ion-grid text-center>
+        <ion-row>
+          <ion-col col-3 [navPush]="pushPage3">
+            <small>Movement Control</small>
+            <div class="c100 p68 small dark">
+              <span>68%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col col-3>
+            <small>Explosive Control</small>
+            <div class="c100 p78 small dark">
+              <span>78%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col col-3>
+            <small>Impact Control</small>
+            <div class="c100 p66 small dark">
+              <span>66%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col col-3>
+            <small>Postural Control</small>
+            <div class="c100 p100 small green">
+              <span>100%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Durability'">
+      Durability
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Comparison'">
+
+
+      <ion-list no-lines>
+
+        <ion-list-header color="light">
+          Movement Control
+        </ion-list-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 text-center>
+              <img src="../../assets/img/move2perform/lower_mcs.svg" style="height: 50px;"/>
+            </ion-col>
+            <ion-col col-10 text-center>
+
+              <div class="bar-chart">
+                <dl>
+                  <dd class="percentage percentage-66"><span class="text">66%</span></dd>
+                  <dd class="percentage percentage-88 blue"><span class="text">88%</span></dd>
+                </dl>
+              </div>
+
+
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+
+      <ion-list no-lines>
+
+        <ion-list-header color="light">
+          Postural Control
+        </ion-list-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 text-center>
+              <img src="../../assets/img/move2perform/explosive_control.svg" style="height: 50px;"/>
+            </ion-col>
+            <ion-col col-10 text-center>
+
+              <div class="bar-chart">
+                <dl>
+                  <dd class="percentage percentage-66"><span class="text">66%</span></dd>
+                  <dd class="percentage percentage-88 blue"><span class="text">88%</span></dd>
+                </dl>
+              </div>
+
+
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+
+      <ion-list no-lines>
+
+        <ion-list-header color="light">
+          Explosive Control
+        </ion-list-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 text-center>
+              <img src="../../assets/img/move2perform/triple_broad_jump.svg" style="height: 50px;"/>
+            </ion-col>
+            <ion-col col-10 text-center>
+
+              <div class="bar-chart">
+                <dl>
+                  <dd class="percentage percentage-66"><span class="text">66%</span></dd>
+                  <dd class="percentage percentage-88 blue"><span class="text">88%</span></dd>
+                </dl>
+              </div>
+
+
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+
+      <ion-list no-lines>
+
+        <ion-list-header color="light">
+          Impact Control
+        </ion-list-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 text-center>
+              <img src="../../assets/img/move2perform/postural_control.svg" style="height: 50px;"/>
+            </ion-col>
+            <ion-col col-10 text-center>
+
+              <div class="bar-chart">
+                <dl>
+                  <dd class="percentage percentage-66"><span class="text">66%</span></dd>
+                  <dd class="percentage percentage-88 blue"><span class="text">88%</span></dd>
+                </dl>
+              </div>
+
+
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+
+
+    </ion-list>
+
+
+  </div>
 
 </ion-content>

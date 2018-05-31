@@ -3,6 +3,7 @@ import { NavController, NavParams, ModalController, ViewController, ToastControl
 
 import { FcsReportEfficiencyPage } from '../fcs-report-efficiency/fcs-report-efficiency';
 import { FcsReportComparisonPage } from '../fcs-report-comparison/fcs-report-comparison';
+import { FcsReportEfficiencySub1Page } from '../fcs-report-efficiency-sub1/fcs-report-efficiency-sub1';
 
 
 /**
@@ -20,11 +21,17 @@ export class FcsReportPage {
 
   pushPage: any;
   pushPage2: any;
+  pushPage3: any;
+  fcsReports: any;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public toastCtrl: ToastController) {
 
     this.pushPage = FcsReportEfficiencyPage;
     this.pushPage2 = FcsReportComparisonPage;
+    this.pushPage3 = FcsReportEfficiencySub1Page;
+
+    this.fcsReports = "Effectiveness";
   }
 
   ionViewDidLoad() {
